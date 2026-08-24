@@ -1,14 +1,19 @@
 # TIMDR Radar Module
 
-Moduł analizy trajektorii ruchu (`timdr_radar.py`): gradient przepływu
-(TIMDR-flow), detekcja topologicznych "twistów" (nagłych zmian kierunku),
-redukcja szumu trajektorii (TRM) i prosta predykcja ruchu.
+Dwa niezależne moduły:
+- **`timdr_radar.py`** — analiza trajektorii ruchu: gradient przepływu
+  (TIMDR-flow), detekcja topologicznych "twistów" (nagłych zmian
+  kierunku), redukcja szumu trajektorii (TRM) i prosta predykcja ruchu.
+- **`rcs_sphere.py`** — przekrój radarowy (RCS) w reżimie rezonansowym
+  (dokładny szereg Mie dla idealnie przewodzącej kuli) — patrz sekcja
+  niżej.
 
 ## Status
 
 Kod ze zgłoszenia uruchomiony i przetestowany (`test_timdr_radar.py`,
 10/10 testów przechodzi). Znaleziono i naprawiono jeden realny błąd
-matematyczny oraz kilka braków w walidacji wejścia.
+matematyczny oraz kilka braków w walidacji wejścia. `rcs_sphere.py`:
+10/10 testów (`test_rcs_sphere.py`) — razem 20/20.
 
 ![Bug zawijania kąta w detektorze twist](screenshot_twist_bugfix.png)
 
@@ -47,31 +52,6 @@ Test regresyjny: `test_zawijanie_kata_nie_daje_falszywego_alarmu`.
   względem rzeczywistego czasu `t`, tak jak `v` i `a` — oryginalny kod
   mieszał gradient "po czasie" z gradientem "po indeksie próbki", co
   dawało niespójny wynik przy nierównomiernym próbkowaniu.
-
-## 🔗 Relacja do FLIGHT-TRACKING-TIMDR
-
-`Radar-TIMDR` to **generyczna, bazowa wersja 2D** — wejście to dowolna
-trajektoria `[x, y, t]` bez założeń o jednostkach czy geometrii Ziemi.
-Nadaje się do wizji komputerowej, robotyki, danych GPS czy analityki
-sportowej (patrz sekcja zastosowań niżej), ale **nie** do lotniczego
-śledzenia toru lotu wprost na współrzędnych geograficznych.
-
-Do danych `[lat, lon, alt, t]` (ADS-B, FDR, tor lotu) służy osobne,
-pochodne repozytorium:
-**[FLIGHT-TRACKING-TIMDR](https://github.com/jbackk-lang/FLIGHT-TRACKING-TIMDR)**
-— rozszerza ten moduł o rzutowanie geodezyjne (korekta `cos(lat)` przy
-liczeniu kursu, bo 1° długości geograficznej ≠ 1° szerokości w metrach),
-próg prędkości pionowej w m/s zamiast surowej różnicy próbek, oraz
-diagnostykę lotniczą (kurs, prędkość względem ziemi, prędkość pionowa).
-Sam bug zawijania kąta w `twist()` (opisany wyżej) był obecny w obu
-wersjach i został naprawiony tym samym sposobem (`np.unwrap()` przed
-gradientem) w obu repozytoriach.
-
-**Kiedy użyć którego:**
-- trajektoria w pikselach/metrach, bez geografii → `Radar-TIMDR`
-- trajektoria w stopniach lat/lon (dowolny tor GPS/ADS-B) →
-  `FLIGHT-TRACKING-TIMDR` — użycie tego modułu wprost na stopniach da
-  błędny kurs poza równikiem (patrz błąd 1 w README FLIGHT-TRACKING-TIMDR)
 
 ## 🎯 Zastosowania (i warunki, przy których mają sens)
 
@@ -146,6 +126,49 @@ częściej niż realne zmiany trasy.
   Tutaj "TIMDR-flow" oznacza po prostu gradient prędkości+przyspieszenia
   trajektorii — warto to doprecyzować, jeśli moduł ma być częścią
   większej, spójnej narracji między repozytoriami.
+
+## `rcs_sphere.py` — RCS w reżimie rezonansowym (Mie), inna fizyka niż `ringdown_resonance()`
+
+Osobny moduł, dodany na wyraźne pytanie: "czy w radarach (i echosondach)
+nie trzeba zastosować rezonansu?". Odpowiedź jest tak, ale to **inne
+zjawisko** niż `ringdown_resonance()` z pozostałych repozytoriów TIMDR
+(ta funkcja liczy dogasanie sygnału W CZASIE po zdarzeniu — np. własne
+"dzwonienie" przetwornika po impulsie). Tu chodzi o to, jak przekrój
+radarowy (RCS) celu zależy od CZĘSTOTLIWOŚCI/ROZMIARU celu względem
+długości fali — zjawisko rozpraszania elektromagnetycznego, nie dogasanie
+w czasie.
+
+**Fizyka:** rozpraszanie fali na idealnie przewodzącej (PEC) kuli ma
+dokładne rozwiązanie analityczne — szereg Mie (1908). W zależności od
+parametru rozmiaru `ka` (k=2π/λ, a=promień) są trzy reżimy: Rayleigha
+(ka≪1, σ∝λ⁻⁴ — to samo prawo co błękit nieba), **rezonansowy** (ka~1,
+σ oscyluje wokół wartości optycznej przez interferencję odbicia wprost
+z falami "pełzającymi" wokół kuli — pierwszy pik σ/πa²≈3-4 przy ka≈1),
+optyczny (ka≫1, σ→πa²).
+
+**Walidacja** (`test_rcs_sphere.py`, 10/10 testów) — trzy niezależne,
+dobrze znane prawa fizyczne, każde sprawdzone na własnej implementacji:
+skalowanie Rayleigha (podwojenie `ka` daje ~16x RCS, zweryfikowano do
+0.02%), zbieżność do przekroju geometrycznego w granicy optycznej
+(σ/πa²→1 dla dużych `ka`), i jakościowa nie-monotoniczność (oscylacja)
+w reżimie rezonansowym — odróżniająca go od prostego wzrostu Rayleigha.
+
+**⚠️ Uczciwe ograniczenie zakresu:** to rozwiązanie jest DOKŁADNE
+WYŁĄCZNIE DLA KULI. Dla dowolnego realnego celu (samolot, statek,
+pojazd) reżim rezonansowy RCS wymaga pełnego rozwiązania równań
+Maxwella dla tej konkretnej geometrii (metoda momentów, FEM, albo
+optyka fizyczna + fale pełzające) — nie da się tego uczciwie przybliżyć
+lekkim modułem Python bez solvera elektromagnetycznego. Ten moduł nie
+jest ogólnym narzędziem RCS dla dowolnych kształtów; jest dokładnym
+rozwiązaniem dla jednego kanonicznego kształtu, użytecznym jako
+kalibracja/ilustracja zjawiska, nie jako model realnego celu.
+
+```python
+from rcs_sphere import rcs_sphere, classify_regime
+
+sigma = rcs_sphere(frequency_hz=1e9, radius_m=0.5)  # RCS w m^2
+regime = classify_regime(ka=2 * 3.14159 * 0.5 / (3e8 / 1e9))  # "rayleigh"/"rezonansowy"/"optyczny"
+```
 
 ### Przykład użycia (identyczny jak w zgłoszeniu)
 
