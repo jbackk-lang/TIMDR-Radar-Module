@@ -185,3 +185,7 @@ pred = radar.predict(traj)
 ```
 
 Uruchomienie: `python demo.py` / testy: `pytest -q`.
+
+## Hybryda radar–astronomia: nowy pilot
+
+Dodano [kod i protokół](hybrid_experiment/README.md) estymacji zegara rotacyjnego z obwiedni syntetycznego echa I/Q. W 30 próbach sprawdzono stały obrót, przyspieszanie, zwalnianie, luki, harmoniczne i sam szum. Przy przyspieszaniu NMSE prognozy: stała częstotliwość 1,301; STFT 0,369; zegar z astronomii 0,202; znany zegar 0,197. Przy stałym obrocie prosta metoda pozostaje lepsza. [Wyniki i ograniczenia](hybrid_experiment/INTERPRETACJA.md). To nie walidacja realnego radaru ani poprawy trajektorii; generator ma fazę zgodną z rodziną estymatora.

@@ -1,0 +1,76 @@
+{
+  "protocol_sha256": "3a54d4910834aa62e25d67feae37b0a473dd9466f268563517c26c1f950ac42b",
+  "true_f0": 0.4809309859049442,
+  "true_drift": 0.012625403679677594,
+  "clock_report": {
+    "status": "accepted_model",
+    "reasons": [],
+    "time_origin": 0.0,
+    "frequency_initial": 0.4815467343203995,
+    "frequency_drift": 0.012597749101446815,
+    "explained_variation": 0.7964159882775114,
+    "local_explained_variation": [
+      0.8303659223716604,
+      0.7787740246050431,
+      0.7585504171206188,
+      0.7583411892374794,
+      0.8230737899351572,
+      0.8119458945180065
+    ],
+    "harmonics": 2,
+    "frequency_bounds": [
+      0.3,
+      0.85
+    ],
+    "drift_bounds": [
+      -0.015,
+      0.025
+    ],
+    "photometric_period_canonicalized": false,
+    "physical_rotation_identified": false,
+    "scope": "constant frequency drift; fixed harmonic amplitudes; phase relative to first sample",
+    "warning": "Photometric periodicity is not uniquely the physical rotation. Bounds are prior information."
+  },
+  "spectral_seconds": 0.4765093000023626,
+  "rows": [
+    {
+      "case": "accelerating",
+      "seed": 3,
+      "arm": "constant",
+      "nmse": 1.3406261696309358,
+      "frequency_mae": 0.13793451187713945,
+      "f0": 0.6584737484737486,
+      "drift": 0.0
+    },
+    {
+      "case": "accelerating",
+      "seed": 3,
+      "arm": "stft",
+      "nmse": 0.44663440669491306,
+      "frequency_mae": 0.007493194179663141,
+      "f0": 0.48030615755073963,
+      "drift": 0.012950287022703816
+    },
+    {
+      "case": "accelerating",
+      "seed": 3,
+      "arm": "astronomy",
+      "nmse": 0.18879029787359417,
+      "frequency_mae": 8.962353798648515e-05,
+      "f0": 0.4815467343203995,
+      "drift": 0.012597749101446815,
+      "status": "accepted_model",
+      "reasons": [],
+      "seconds": 2.491889299999457
+    },
+    {
+      "case": "accelerating",
+      "seed": 3,
+      "arm": "oracle",
+      "nmse": 0.18826476146378954,
+      "frequency_mae": 0.0,
+      "f0": 0.4809309859049442,
+      "drift": 0.012625403679677594
+    }
+  ]
+}

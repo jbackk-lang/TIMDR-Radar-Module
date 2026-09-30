@@ -1,0 +1,73 @@
+{
+  "protocol_sha256": "3a54d4910834aa62e25d67feae37b0a473dd9466f268563517c26c1f950ac42b",
+  "true_f0": null,
+  "true_drift": null,
+  "clock_report": {
+    "status": "unreliable",
+    "reasons": [
+      "low_explained_variation",
+      "local_signal_loss_or_model_mismatch"
+    ],
+    "time_origin": 0.0,
+    "frequency_initial": 0.38957735936391724,
+    "frequency_drift": 0.02322194637740661,
+    "explained_variation": 0.01992689423942995,
+    "local_explained_variation": [
+      -0.006971066086413069,
+      -0.04948917658015928,
+      0.037118674813265584,
+      0.02967860933840183,
+      0.04008348516139115,
+      0.0287856984576903
+    ],
+    "harmonics": 2,
+    "frequency_bounds": [
+      0.3,
+      0.85
+    ],
+    "drift_bounds": [
+      -0.015,
+      0.025
+    ],
+    "photometric_period_canonicalized": false,
+    "physical_rotation_identified": false,
+    "scope": "constant frequency drift; fixed harmonic amplitudes; phase relative to first sample",
+    "warning": "Photometric periodicity is not uniquely the physical rotation. Bounds are prior information."
+  },
+  "spectral_seconds": 0.6857719999970868,
+  "rows": [
+    {
+      "case": "noise",
+      "seed": 1,
+      "arm": "constant",
+      "nmse": 1.0326153610795568,
+      "frequency_mae": null,
+      "f0": 1.4144566544566546,
+      "drift": 0.0
+    },
+    {
+      "case": "noise",
+      "seed": 1,
+      "arm": "stft",
+      "nmse": 1.0340440905393367,
+      "frequency_mae": null,
+      "f0": 0.85,
+      "drift": -0.015
+    },
+    {
+      "case": "noise",
+      "seed": 1,
+      "arm": "astronomy",
+      "nmse": 1.0349351084513572,
+      "frequency_mae": null,
+      "f0": 0.38957735936391724,
+      "drift": 0.02322194637740661,
+      "status": "unreliable",
+      "reasons": [
+        "low_explained_variation",
+        "local_signal_loss_or_model_mismatch"
+      ],
+      "seconds": 3.072257499967236
+    }
+  ]
+}

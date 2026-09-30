@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "trials": 30,
+  "predictions_verified": 115,
+  "source_hash_verified": true,
+  "split_verified": true,
+  "protocol_sha256": "3a54d4910834aa62e25d67feae37b0a473dd9466f268563517c26c1f950ac42b"
+}

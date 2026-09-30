@@ -1,0 +1,80 @@
+{
+  "protocol_sha256": "3a54d4910834aa62e25d67feae37b0a473dd9466f268563517c26c1f950ac42b",
+  "true_f0": 0.7494747659426371,
+  "true_drift": -0.009,
+  "clock_report": {
+    "status": "unreliable",
+    "reasons": [
+      "optimization_disagreement"
+    ],
+    "time_origin": 0.0,
+    "frequency_initial": 0.7496389566190382,
+    "frequency_drift": -0.008972697938316333,
+    "explained_variation": 0.8157472320834233,
+    "local_explained_variation": [
+      0.8005716177828908,
+      0.8158061810826894,
+      0.8058792195009954,
+      0.8143842780434893,
+      0.8300015379719159,
+      0.8210683334080477
+    ],
+    "harmonics": 2,
+    "frequency_bounds": [
+      0.3,
+      0.85
+    ],
+    "drift_bounds": [
+      -0.015,
+      0.025
+    ],
+    "photometric_period_canonicalized": false,
+    "physical_rotation_identified": false,
+    "scope": "constant frequency drift; fixed harmonic amplitudes; phase relative to first sample",
+    "warning": "Photometric periodicity is not uniquely the physical rotation. Bounds are prior information."
+  },
+  "spectral_seconds": 0.8144084000377916,
+  "rows": [
+    {
+      "case": "decelerating",
+      "seed": 0,
+      "arm": "constant",
+      "nmse": 1.5439238346957986,
+      "frequency_mae": 0.13601102465565357,
+      "f0": 0.6605982905982907,
+      "drift": 0.0
+    },
+    {
+      "case": "decelerating",
+      "seed": 0,
+      "arm": "stft",
+      "nmse": 0.21118882923022314,
+      "frequency_mae": 0.0007574990612409599,
+      "f0": 0.7485836988304094,
+      "drift": -0.008994654605263164
+    },
+    {
+      "case": "decelerating",
+      "seed": 0,
+      "arm": "astronomy",
+      "nmse": 0.2340057668082379,
+      "frequency_mae": 0.0008464009427217872,
+      "f0": 0.7496389566190382,
+      "drift": -0.008972697938316333,
+      "status": "unreliable",
+      "reasons": [
+        "optimization_disagreement"
+      ],
+      "seconds": 2.8841387999709696
+    },
+    {
+      "case": "decelerating",
+      "seed": 0,
+      "arm": "oracle",
+      "nmse": 0.2180871399915316,
+      "frequency_mae": 0.0,
+      "f0": 0.7494747659426371,
+      "drift": -0.009
+    }
+  ]
+}

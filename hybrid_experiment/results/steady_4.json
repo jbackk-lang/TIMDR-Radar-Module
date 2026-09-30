@@ -1,0 +1,76 @@
+{
+  "protocol_sha256": "3a54d4910834aa62e25d67feae37b0a473dd9466f268563517c26c1f950ac42b",
+  "true_f0": 0.4943033212723463,
+  "true_drift": 0.0,
+  "clock_report": {
+    "status": "accepted_model",
+    "reasons": [],
+    "time_origin": 0.0,
+    "frequency_initial": 0.49580611835421184,
+    "frequency_drift": -0.00019957644044881905,
+    "explained_variation": 0.8092566204685908,
+    "local_explained_variation": [
+      0.8119444690418408,
+      0.8119980957285777,
+      0.8148893894045813,
+      0.7823204287286152,
+      0.7975976546312004,
+      0.8089482095632861
+    ],
+    "harmonics": 2,
+    "frequency_bounds": [
+      0.3,
+      0.85
+    ],
+    "drift_bounds": [
+      -0.015,
+      0.025
+    ],
+    "photometric_period_canonicalized": false,
+    "physical_rotation_identified": false,
+    "scope": "constant frequency drift; fixed harmonic amplitudes; phase relative to first sample",
+    "warning": "Photometric periodicity is not uniquely the physical rotation. Bounds are prior information."
+  },
+  "spectral_seconds": 0.4837554999976419,
+  "rows": [
+    {
+      "case": "steady",
+      "seed": 4,
+      "arm": "constant",
+      "nmse": 0.20148976847210578,
+      "frequency_mae": 0.0004815874506123863,
+      "f0": 0.4938217338217339,
+      "drift": 0.0
+    },
+    {
+      "case": "steady",
+      "seed": 4,
+      "arm": "stft",
+      "nmse": 0.2236298845635079,
+      "frequency_mae": 0.000908526772742193,
+      "f0": 0.48742797557619555,
+      "drift": 0.00030234133126934656
+    },
+    {
+      "case": "steady",
+      "seed": 4,
+      "arm": "astronomy",
+      "nmse": 0.22414678685768244,
+      "frequency_mae": 0.003484119223849296,
+      "f0": 0.49580611835421184,
+      "drift": -0.00019957644044881905,
+      "status": "accepted_model",
+      "reasons": [],
+      "seconds": 3.3294330000062473
+    },
+    {
+      "case": "steady",
+      "seed": 4,
+      "arm": "oracle",
+      "nmse": 0.20288455881772002,
+      "frequency_mae": 0.0,
+      "f0": 0.4943033212723463,
+      "drift": 0.0
+    }
+  ]
+}

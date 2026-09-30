@@ -1,0 +1,6 @@
+{
+  "source": "https://github.com/jbackk-lang/TIMDR-orbital-tracker",
+  "path": "timdr_orbit/rotation_clock.py",
+  "sha256": "db76c9a2f87aa8715d72b9c0617f15a62ce3ada4bb7b4f06fa97df71415eaba4",
+  "note": "Exact local source snapshot; no tuning of original estimator for this pilot."
+}

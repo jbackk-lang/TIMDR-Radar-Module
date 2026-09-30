@@ -1,0 +1,1144 @@
+[
+  {
+    "case": "steady",
+    "seed": 0,
+    "arm": "constant",
+    "nmse": 0.18929666972835332,
+    "frequency_mae": 0.0006393675756470318,
+    "f0": 0.4785958485958487,
+    "drift": 0.0
+  },
+  {
+    "case": "steady",
+    "seed": 0,
+    "arm": "stft",
+    "nmse": 0.3008768139892866,
+    "frequency_mae": 0.007370702249400488,
+    "f0": 0.4838065982972135,
+    "drift": -0.000529097329721354
+  },
+  {
+    "case": "steady",
+    "seed": 0,
+    "arm": "astronomy",
+    "nmse": 0.18580704109801624,
+    "frequency_mae": 0.0005423958978070068,
+    "f0": 0.47789307028481937,
+    "drift": 2.42443875213328e-05,
+    "status": "accepted_model",
+    "reasons": [],
+    "seconds": 2.5698801000253297
+  },
+  {
+    "case": "steady",
+    "seed": 0,
+    "arm": "oracle",
+    "nmse": 0.1844654145174048,
+    "frequency_mae": 0.0,
+    "f0": 0.47795648102020166,
+    "drift": 0.0
+  },
+  {
+    "case": "steady",
+    "seed": 1,
+    "arm": "constant",
+    "nmse": 0.2082359744441625,
+    "frequency_mae": 0.0001331787329229006,
+    "f0": 0.4991330891330892,
+    "drift": 0.0
+  },
+  {
+    "case": "steady",
+    "seed": 1,
+    "arm": "stft",
+    "nmse": 0.2293935530142211,
+    "frequency_mae": 0.00400368275858838,
+    "f0": 0.49293058780529764,
+    "drift": 0.0004031217750257938
+  },
+  {
+    "case": "steady",
+    "seed": 1,
+    "arm": "astronomy",
+    "nmse": 0.20853982510943014,
+    "frequency_mae": 0.0008917872736424947,
+    "f0": 0.49985436462319655,
+    "drift": -6.98846021679944e-05,
+    "status": "accepted_model",
+    "reasons": [],
+    "seconds": 2.2852125000208616
+  },
+  {
+    "case": "steady",
+    "seed": 1,
+    "arm": "oracle",
+    "nmse": 0.20823398972055135,
+    "frequency_mae": 0.0,
+    "f0": 0.4989999104001663,
+    "drift": 0.0
+  },
+  {
+    "case": "steady",
+    "seed": 2,
+    "arm": "constant",
+    "nmse": 0.20866869763504392,
+    "frequency_mae": 0.0005087364219267254,
+    "f0": 0.4817826617826618,
+    "drift": 0.0
+  },
+  {
+    "case": "steady",
+    "seed": 2,
+    "arm": "stft",
+    "nmse": 0.4441896891070821,
+    "frequency_mae": 0.01002845460184477,
+    "f0": 0.4869845416236669,
+    "drift": -0.0006298777734778013
+  },
+  {
+    "case": "steady",
+    "seed": 2,
+    "arm": "astronomy",
+    "nmse": 0.20130096371892178,
+    "frequency_mae": 0.0004621424258991122,
+    "f0": 0.4816797951759908,
+    "drift": -3.4737858575480205e-05,
+    "status": "accepted_model",
+    "reasons": [],
+    "seconds": 2.5482783999759704
+  },
+  {
+    "case": "steady",
+    "seed": 2,
+    "arm": "oracle",
+    "nmse": 0.202332430038866,
+    "frequency_mae": 0.0,
+    "f0": 0.4812739253607351,
+    "drift": 0.0
+  },
+  {
+    "case": "steady",
+    "seed": 3,
+    "arm": "constant",
+    "nmse": 0.19783228875095543,
+    "frequency_mae": 0.000851675877717617,
+    "f0": 0.4817826617826618,
+    "drift": 0.0
+  },
+  {
+    "case": "steady",
+    "seed": 3,
+    "arm": "stft",
+    "nmse": 0.632469693869555,
+    "frequency_mae": 0.01443386953558754,
+    "f0": 0.47270059339525305,
+    "drift": 0.0009070239938080518
+  },
+  {
+    "case": "steady",
+    "seed": 3,
+    "arm": "astronomy",
+    "nmse": 0.28075278400570985,
+    "frequency_mae": 0.006293581004248712,
+    "f0": 0.4777805671310057,
+    "drift": 0.0003779489656102941,
+    "status": "accepted_model",
+    "reasons": [],
+    "seconds": 3.247824399964884
+  },
+  {
+    "case": "steady",
+    "seed": 3,
+    "arm": "oracle",
+    "nmse": 0.19546809117719974,
+    "frequency_mae": 0.0,
+    "f0": 0.4809309859049442,
+    "drift": 0.0
+  },
+  {
+    "case": "steady",
+    "seed": 4,
+    "arm": "constant",
+    "nmse": 0.20148976847210578,
+    "frequency_mae": 0.0004815874506123863,
+    "f0": 0.4938217338217339,
+    "drift": 0.0
+  },
+  {
+    "case": "steady",
+    "seed": 4,
+    "arm": "stft",
+    "nmse": 0.2236298845635079,
+    "frequency_mae": 0.000908526772742193,
+    "f0": 0.48742797557619555,
+    "drift": 0.00030234133126934656
+  },
+  {
+    "case": "steady",
+    "seed": 4,
+    "arm": "astronomy",
+    "nmse": 0.22414678685768244,
+    "frequency_mae": 0.003484119223849296,
+    "f0": 0.49580611835421184,
+    "drift": -0.00019957644044881905,
+    "status": "accepted_model",
+    "reasons": [],
+    "seconds": 3.3294330000062473
+  },
+  {
+    "case": "steady",
+    "seed": 4,
+    "arm": "oracle",
+    "nmse": 0.20288455881772002,
+    "frequency_mae": 0.0,
+    "f0": 0.4943033212723463,
+    "drift": 0.0
+  },
+  {
+    "case": "accelerating",
+    "seed": 0,
+    "arm": "constant",
+    "nmse": 1.2636414769305784,
+    "frequency_mae": 0.2827735782642884,
+    "f0": 0.5777411477411478,
+    "drift": 0.0
+  },
+  {
+    "case": "accelerating",
+    "seed": 0,
+    "arm": "stft",
+    "nmse": 0.2581791706946046,
+    "frequency_mae": 0.0028015242028435715,
+    "f0": 0.4786533582731338,
+    "drift": 0.015394212783797738
+  },
+  {
+    "case": "accelerating",
+    "seed": 0,
+    "arm": "astronomy",
+    "nmse": 0.22541473029685907,
+    "frequency_mae": 0.0013947786351505898,
+    "f0": 0.4783193816308592,
+    "drift": 0.015239642450802459,
+    "status": "accepted_model",
+    "reasons": [],
+    "seconds": 2.752962800033856
+  },
+  {
+    "case": "accelerating",
+    "seed": 0,
+    "arm": "oracle",
+    "nmse": 0.2134701536926614,
+    "frequency_mae": 0.0,
+    "f0": 0.47795648102020166,
+    "drift": 0.015309984791805285
+  },
+  {
+    "case": "accelerating",
+    "seed": 1,
+    "arm": "constant",
+    "nmse": 1.262181197172017,
+    "frequency_mae": 0.2754808525259603,
+    "f0": 0.5972161172161172,
+    "drift": 0.0
+  },
+  {
+    "case": "accelerating",
+    "seed": 1,
+    "arm": "stft",
+    "nmse": 0.47545131886069925,
+    "frequency_mae": 0.009490838478112848,
+    "f0": 0.4950066649466805,
+    "drift": 0.015494993227554172
+  },
+  {
+    "case": "accelerating",
+    "seed": 1,
+    "arm": "astronomy",
+    "nmse": 0.19945200780726477,
+    "frequency_mae": 0.00033791620990886536,
+    "f0": 0.4999979295967649,
+    "drift": 0.014901895905368834,
+    "status": "accepted_model",
+    "reasons": [],
+    "seconds": 2.5982657000422478
+  },
+  {
+    "case": "accelerating",
+    "seed": 1,
+    "arm": "oracle",
+    "nmse": 0.19886128327258862,
+    "frequency_mae": 0.0,
+    "f0": 0.4989999104001663,
+    "drift": 0.014955360053703301
+  },
+  {
+    "case": "accelerating",
+    "seed": 2,
+    "arm": "constant",
+    "nmse": 1.280558094306023,
+    "frequency_mae": 0.27079840651982706,
+    "f0": 0.5823443223443224,
+    "drift": 0.0
+  },
+  {
+    "case": "accelerating",
+    "seed": 2,
+    "arm": "stft",
+    "nmse": 0.34825834718602233,
+    "frequency_mae": 0.007053320821601332,
+    "f0": 0.48472034098727224,
+    "drift": 0.014461993679050563
+  },
+  {
+    "case": "accelerating",
+    "seed": 2,
+    "arm": "astronomy",
+    "nmse": 0.18051888478161504,
+    "frequency_mae": 0.0005808745274096694,
+    "f0": 0.48111740081111465,
+    "drift": 0.014865210746398207,
+    "status": "accepted_model",
+    "reasons": [],
+    "seconds": 1.9739261999493465
+  },
+  {
+    "case": "accelerating",
+    "seed": 2,
+    "arm": "oracle",
+    "nmse": 0.1742258043467246,
+    "frequency_mae": 0.0,
+    "f0": 0.4812739253607351,
+    "drift": 0.014882193236754954
+  },
+  {
+    "case": "accelerating",
+    "seed": 3,
+    "arm": "constant",
+    "nmse": 1.3406261696309358,
+    "frequency_mae": 0.13793451187713945,
+    "f0": 0.6584737484737486,
+    "drift": 0.0
+  },
+  {
+    "case": "accelerating",
+    "seed": 3,
+    "arm": "stft",
+    "nmse": 0.44663440669491306,
+    "frequency_mae": 0.007493194179663141,
+    "f0": 0.48030615755073963,
+    "drift": 0.012950287022703816
+  },
+  {
+    "case": "accelerating",
+    "seed": 3,
+    "arm": "astronomy",
+    "nmse": 0.18879029787359417,
+    "frequency_mae": 8.962353798648515e-05,
+    "f0": 0.4815467343203995,
+    "drift": 0.012597749101446815,
+    "status": "accepted_model",
+    "reasons": [],
+    "seconds": 2.491889299999457
+  },
+  {
+    "case": "accelerating",
+    "seed": 3,
+    "arm": "oracle",
+    "nmse": 0.18826476146378954,
+    "frequency_mae": 0.0,
+    "f0": 0.4809309859049442,
+    "drift": 0.012625403679677594
+  },
+  {
+    "case": "accelerating",
+    "seed": 4,
+    "arm": "constant",
+    "nmse": 1.356053952106522,
+    "frequency_mae": 0.15213463269476754,
+    "f0": 0.675824175824176,
+    "drift": 0.0
+  },
+  {
+    "case": "accelerating",
+    "seed": 4,
+    "arm": "stft",
+    "nmse": 0.3177185556378579,
+    "frequency_mae": 0.008254455509236374,
+    "f0": 0.5005159958720331,
+    "drift": 0.012773921246130027
+  },
+  {
+    "case": "accelerating",
+    "seed": 4,
+    "arm": "astronomy",
+    "nmse": 0.21381806454644053,
+    "frequency_mae": 0.0022293190581088675,
+    "f0": 0.49548320626253645,
+    "drift": 0.013216459557710784,
+    "status": "accepted_model",
+    "reasons": [],
+    "seconds": 3.6929059000103734
+  },
+  {
+    "case": "accelerating",
+    "seed": 4,
+    "arm": "oracle",
+    "nmse": 0.20956256573433418,
+    "frequency_mae": 0.0,
+    "f0": 0.4943033212723463,
+    "drift": 0.013352895937832806
+  },
+  {
+    "case": "decelerating",
+    "seed": 0,
+    "arm": "constant",
+    "nmse": 1.5439238346957986,
+    "frequency_mae": 0.13601102465565357,
+    "f0": 0.6605982905982907,
+    "drift": 0.0
+  },
+  {
+    "case": "decelerating",
+    "seed": 0,
+    "arm": "stft",
+    "nmse": 0.21118882923022314,
+    "frequency_mae": 0.0007574990612409599,
+    "f0": 0.7485836988304094,
+    "drift": -0.008994654605263164
+  },
+  {
+    "case": "decelerating",
+    "seed": 0,
+    "arm": "astronomy",
+    "nmse": 0.2340057668082379,
+    "frequency_mae": 0.0008464009427217872,
+    "f0": 0.7496389566190382,
+    "drift": -0.008972697938316333,
+    "status": "unreliable",
+    "reasons": [
+      "optimization_disagreement"
+    ],
+    "seconds": 2.8841387999709696
+  },
+  {
+    "case": "decelerating",
+    "seed": 0,
+    "arm": "oracle",
+    "nmse": 0.2180871399915316,
+    "frequency_mae": 0.0,
+    "f0": 0.7494747659426371,
+    "drift": -0.009
+  },
+  {
+    "case": "decelerating",
+    "seed": 1,
+    "arm": "constant",
+    "nmse": 1.5886343001221959,
+    "frequency_mae": 0.1333295548590767,
+    "f0": 0.6368742368742369,
+    "drift": 0.0
+  },
+  {
+    "case": "decelerating",
+    "seed": 1,
+    "arm": "stft",
+    "nmse": 0.2053922182750163,
+    "frequency_mae": 0.0030222823857636682,
+    "f0": 0.7315719599243209,
+    "drift": -0.009246605714654299
+  },
+  {
+    "case": "decelerating",
+    "seed": 1,
+    "arm": "astronomy",
+    "nmse": 0.19885578707590384,
+    "frequency_mae": 0.00014060870745204472,
+    "f0": 0.7275188646070505,
+    "drift": -0.008958499465173526,
+    "status": "accepted_model",
+    "reasons": [],
+    "seconds": 2.0556972000049427
+  },
+  {
+    "case": "decelerating",
+    "seed": 1,
+    "arm": "oracle",
+    "nmse": 0.20041631618835481,
+    "frequency_mae": 0.0,
+    "f0": 0.7284321820151602,
+    "drift": -0.009
+  },
+  {
+    "case": "decelerating",
+    "seed": 2,
+    "arm": "constant",
+    "nmse": 1.520728327267323,
+    "frequency_mae": 0.1339423309251356,
+    "f0": 0.603943833943834,
+    "drift": 0.0
+  },
+  {
+    "case": "decelerating",
+    "seed": 2,
+    "arm": "stft",
+    "nmse": 0.24018316504516296,
+    "frequency_mae": 0.000989707078964565,
+    "f0": 0.6970042677158583,
+    "drift": -0.009045044827141385
+  },
+  {
+    "case": "decelerating",
+    "seed": 2,
+    "arm": "astronomy",
+    "nmse": 0.22680384735431966,
+    "frequency_mae": 0.0018572512678706038,
+    "f0": 0.6963569335073018,
+    "drift": -0.00913307380716254,
+    "status": "accepted_model",
+    "reasons": [],
+    "seconds": 2.8940668999566697
+  },
+  {
+    "case": "decelerating",
+    "seed": 2,
+    "arm": "oracle",
+    "nmse": 0.220088840412956,
+    "frequency_mae": 0.0,
+    "f0": 0.6948890030186984,
+    "drift": -0.009
+  },
+  {
+    "case": "decelerating",
+    "seed": 3,
+    "arm": "constant",
+    "nmse": 1.6701735064765002,
+    "frequency_mae": 0.13345219156841698,
+    "f0": 0.637936507936508,
+    "drift": 0.0
+  },
+  {
+    "case": "decelerating",
+    "seed": 3,
+    "arm": "stft",
+    "nmse": 0.4225762386363502,
+    "frequency_mae": 0.01033956308774839,
+    "f0": 0.7238387405400758,
+    "drift": -0.008364776831785348
+  },
+  {
+    "case": "decelerating",
+    "seed": 3,
+    "arm": "astronomy",
+    "nmse": 0.18284125859758926,
+    "frequency_mae": 0.0002513477800421143,
+    "f0": 0.72881024506334,
+    "drift": -0.008967466970093322,
+    "status": "accepted_model",
+    "reasons": [],
+    "seconds": 2.707835399953183
+  },
+  {
+    "case": "decelerating",
+    "seed": 3,
+    "arm": "oracle",
+    "nmse": 0.1827040232586141,
+    "frequency_mae": 0.0,
+    "f0": 0.729371816368091,
+    "drift": -0.009
+  },
+  {
+    "case": "decelerating",
+    "seed": 4,
+    "arm": "constant",
+    "nmse": 1.5735846222315983,
+    "frequency_mae": 0.13713318810539873,
+    "f0": 0.6623687423687424,
+    "drift": 0.0
+  },
+  {
+    "case": "decelerating",
+    "seed": 4,
+    "arm": "stft",
+    "nmse": 0.29070991274252295,
+    "frequency_mae": 0.006098681390895894,
+    "f0": 0.7453855994152047,
+    "drift": -0.008566337719298251
+  },
+  {
+    "case": "decelerating",
+    "seed": 4,
+    "arm": "astronomy",
+    "nmse": 0.20232381335497124,
+    "frequency_mae": 0.0011311444637997154,
+    "f0": 0.750749264904585,
+    "drift": -0.009070329368886085,
+    "status": "accepted_model",
+    "reasons": [],
+    "seconds": 2.892407800012734
+  },
+  {
+    "case": "decelerating",
+    "seed": 4,
+    "arm": "oracle",
+    "nmse": 0.2004746013859746,
+    "frequency_mae": 0.0,
+    "f0": 0.7501230542633437,
+    "drift": -0.009
+  },
+  {
+    "case": "gaps",
+    "seed": 0,
+    "arm": "constant",
+    "nmse": 1.1801746711249415,
+    "frequency_mae": 0.1297968716170624,
+    "f0": 0.728937728937729,
+    "drift": 0.0
+  },
+  {
+    "case": "gaps",
+    "seed": 0,
+    "arm": "stft",
+    "nmse": 0.7704744034455362,
+    "frequency_mae": 0.047846476322296015,
+    "f0": 0.3,
+    "drift": 0.02438886738906088
+  },
+  {
+    "case": "gaps",
+    "seed": 0,
+    "arm": "astronomy",
+    "nmse": 0.21147652911268575,
+    "frequency_mae": 0.000376660346355605,
+    "f0": 0.4778879220354342,
+    "drift": 0.015297596928852408,
+    "status": "accepted_model",
+    "reasons": [],
+    "seconds": 3.325309899984859
+  },
+  {
+    "case": "gaps",
+    "seed": 0,
+    "arm": "oracle",
+    "nmse": 0.20939907961058699,
+    "frequency_mae": 0.0,
+    "f0": 0.47795648102020166,
+    "drift": 0.015309984791805285
+  },
+  {
+    "case": "gaps",
+    "seed": 1,
+    "arm": "constant",
+    "nmse": 1.0932132500213252,
+    "frequency_mae": 0.12284279181361155,
+    "f0": 0.7491208791208792,
+    "drift": 0.0
+  },
+  {
+    "case": "gaps",
+    "seed": 1,
+    "arm": "stft",
+    "nmse": 0.5686275866693339,
+    "frequency_mae": 0.03247633673672098,
+    "f0": 0.3691050159098728,
+    "drift": 0.02146623452012383
+  },
+  {
+    "case": "gaps",
+    "seed": 1,
+    "arm": "astronomy",
+    "nmse": 0.2185271347642489,
+    "frequency_mae": 0.0005990419532670771,
+    "f0": 0.5007888118704793,
+    "drift": 0.014859606638850475,
+    "status": "accepted_model",
+    "reasons": [],
+    "seconds": 3.4583884999738075
+  },
+  {
+    "case": "gaps",
+    "seed": 1,
+    "arm": "oracle",
+    "nmse": 0.2176848520101902,
+    "frequency_mae": 0.0,
+    "f0": 0.4989999104001663,
+    "drift": 0.014955360053703301
+  },
+  {
+    "case": "gaps",
+    "seed": 2,
+    "arm": "constant",
+    "nmse": 1.0861624645021672,
+    "frequency_mae": 0.11840922367649126,
+    "f0": 0.7346031746031747,
+    "drift": 0.0
+  },
+  {
+    "case": "gaps",
+    "seed": 2,
+    "arm": "stft",
+    "nmse": 0.9083279567691533,
+    "frequency_mae": 0.022703384261825416,
+    "f0": 0.3,
+    "drift": 0.022738587622549003
+  },
+  {
+    "case": "gaps",
+    "seed": 2,
+    "arm": "astronomy",
+    "nmse": 0.15434017854169899,
+    "frequency_mae": 0.0029446485513942144,
+    "f0": 0.4792102458092091,
+    "drift": 0.01508269684897317,
+    "status": "accepted_model",
+    "reasons": [],
+    "seconds": 2.6240377000067383
+  },
+  {
+    "case": "gaps",
+    "seed": 2,
+    "arm": "oracle",
+    "nmse": 0.14563297310919365,
+    "frequency_mae": 0.0,
+    "f0": 0.4812739253607351,
+    "drift": 0.014882193236754954
+  },
+  {
+    "case": "gaps",
+    "seed": 3,
+    "arm": "constant",
+    "nmse": 1.3420427024836195,
+    "frequency_mae": 0.1263780277569648,
+    "f0": 0.6680341880341881,
+    "drift": 0.0
+  },
+  {
+    "case": "gaps",
+    "seed": 3,
+    "arm": "stft",
+    "nmse": 1.2851762749379674,
+    "frequency_mae": 0.06759029359118943,
+    "f0": 0.3452738003095976,
+    "drift": 0.02081116163570691
+  },
+  {
+    "case": "gaps",
+    "seed": 3,
+    "arm": "astronomy",
+    "nmse": 0.18963239817719146,
+    "frequency_mae": 2.3733019092865928e-05,
+    "f0": 0.48075566990657864,
+    "drift": 0.012633189466847761,
+    "status": "accepted_model",
+    "reasons": [],
+    "seconds": 3.046667199989315
+  },
+  {
+    "case": "gaps",
+    "seed": 3,
+    "arm": "oracle",
+    "nmse": 0.18949184651549789,
+    "frequency_mae": 0.0,
+    "f0": 0.4809309859049442,
+    "drift": 0.012625403679677594
+  },
+  {
+    "case": "gaps",
+    "seed": 4,
+    "arm": "constant",
+    "nmse": 1.0976084368343304,
+    "frequency_mae": 0.10674238945539306,
+    "f0": 0.721855921855922,
+    "drift": 0.0
+  },
+  {
+    "case": "gaps",
+    "seed": 4,
+    "arm": "stft",
+    "nmse": 1.0891847700872355,
+    "frequency_mae": 0.0583396743615574,
+    "f0": 0.35141468868249054,
+    "drift": 0.0213906491873065
+  },
+  {
+    "case": "gaps",
+    "seed": 4,
+    "arm": "astronomy",
+    "nmse": 0.22019681742545297,
+    "frequency_mae": 0.002143588107759829,
+    "f0": 0.4957755405039588,
+    "drift": 0.013208468110397335,
+    "status": "accepted_model",
+    "reasons": [],
+    "seconds": 2.827934600005392
+  },
+  {
+    "case": "gaps",
+    "seed": 4,
+    "arm": "oracle",
+    "nmse": 0.21715120038254015,
+    "frequency_mae": 0.0,
+    "f0": 0.4943033212723463,
+    "drift": 0.013352895937832806
+  },
+  {
+    "case": "symmetric",
+    "seed": 0,
+    "arm": "constant",
+    "nmse": 1.1676575089848789,
+    "frequency_mae": 0.5521714766807666,
+    "f0": 1.4126862026862028,
+    "drift": 0.0
+  },
+  {
+    "case": "symmetric",
+    "seed": 0,
+    "arm": "stft",
+    "nmse": 1.027487718988852,
+    "frequency_mae": 0.6141727739945638,
+    "f0": 0.85,
+    "drift": 0.025
+  },
+  {
+    "case": "symmetric",
+    "seed": 0,
+    "arm": "astronomy",
+    "nmse": 0.17999908285438218,
+    "frequency_mae": 8.472681470906019e-05,
+    "f0": 0.4777036518101798,
+    "drift": 0.015316712251347567,
+    "status": "accepted_model",
+    "reasons": [],
+    "seconds": 2.8058017999865115
+  },
+  {
+    "case": "symmetric",
+    "seed": 0,
+    "arm": "oracle",
+    "nmse": 0.17976678174605407,
+    "frequency_mae": 0.0,
+    "f0": 0.47795648102020166,
+    "drift": 0.015309984791805285
+  },
+  {
+    "case": "symmetric",
+    "seed": 1,
+    "arm": "constant",
+    "nmse": 1.1392843654412959,
+    "frequency_mae": 0.2712346541895464,
+    "f0": 1.143931623931624,
+    "drift": 0.0
+  },
+  {
+    "case": "symmetric",
+    "seed": 1,
+    "arm": "stft",
+    "nmse": 0.9975530898172253,
+    "frequency_mae": 0.6019905302579224,
+    "f0": 0.85,
+    "drift": 0.025
+  },
+  {
+    "case": "symmetric",
+    "seed": 1,
+    "arm": "astronomy",
+    "nmse": 0.17957423936730887,
+    "frequency_mae": 0.0009540898751268508,
+    "f0": 0.500150657297052,
+    "drift": 0.014871124465028461,
+    "status": "accepted_model",
+    "reasons": [],
+    "seconds": 2.8904739000136033
+  },
+  {
+    "case": "symmetric",
+    "seed": 1,
+    "arm": "oracle",
+    "nmse": 0.18004123906830016,
+    "frequency_mae": 0.0,
+    "f0": 0.4989999104001663,
+    "drift": 0.014955360053703301
+  },
+  {
+    "case": "symmetric",
+    "seed": 2,
+    "arm": "constant",
+    "nmse": 1.1480501142856305,
+    "frequency_mae": 0.2589207631993427,
+    "f0": 1.1120634920634922,
+    "drift": 0.0
+  },
+  {
+    "case": "symmetric",
+    "seed": 2,
+    "arm": "stft",
+    "nmse": 1.001295414700519,
+    "frequency_mae": 0.6215447711358505,
+    "f0": 0.85,
+    "drift": 0.025
+  },
+  {
+    "case": "symmetric",
+    "seed": 2,
+    "arm": "astronomy",
+    "nmse": 0.1570786179332689,
+    "frequency_mae": 0.0004644272344186878,
+    "f0": 0.48075157323928996,
+    "drift": 0.014921684156449355,
+    "status": "accepted_model",
+    "reasons": [],
+    "seconds": 3.166712300037034
+  },
+  {
+    "case": "symmetric",
+    "seed": 2,
+    "arm": "oracle",
+    "nmse": 0.15660713802003146,
+    "frequency_mae": 0.0,
+    "f0": 0.4812739253607351,
+    "drift": 0.014882193236754954
+  },
+  {
+    "case": "symmetric",
+    "seed": 3,
+    "arm": "constant",
+    "nmse": 1.1315252303504328,
+    "frequency_mae": 0.3170715931289655,
+    "f0": 1.1134798534798536,
+    "drift": 0.0
+  },
+  {
+    "case": "symmetric",
+    "seed": 3,
+    "arm": "stft",
+    "nmse": 0.9973263982431689,
+    "frequency_mae": 0.6782792396491121,
+    "f0": 0.85,
+    "drift": 0.025
+  },
+  {
+    "case": "symmetric",
+    "seed": 3,
+    "arm": "astronomy",
+    "nmse": 0.16032722866537455,
+    "frequency_mae": 0.00047477237102230537,
+    "f0": 0.48081146403653396,
+    "drift": 0.0126491873410856,
+    "status": "accepted_model",
+    "reasons": [],
+    "seconds": 2.823536799987778
+  },
+  {
+    "case": "symmetric",
+    "seed": 3,
+    "arm": "oracle",
+    "nmse": 0.1570335226871722,
+    "frequency_mae": 0.0,
+    "f0": 0.4809309859049442,
+    "drift": 0.012625403679677594
+  },
+  {
+    "case": "symmetric",
+    "seed": 4,
+    "arm": "constant",
+    "nmse": 1.1415239130047128,
+    "frequency_mae": 0.4271571865970516,
+    "f0": 1.2551159951159951,
+    "drift": 0.0
+  },
+  {
+    "case": "symmetric",
+    "seed": 4,
+    "arm": "stft",
+    "nmse": 1.0101067818586198,
+    "frequency_mae": 0.6467286914810565,
+    "f0": 0.85,
+    "drift": 0.025
+  },
+  {
+    "case": "symmetric",
+    "seed": 4,
+    "arm": "astronomy",
+    "nmse": 0.18826514040170594,
+    "frequency_mae": 0.0004560307335950484,
+    "f0": 0.4938823554589959,
+    "drift": 0.013387993348415915,
+    "status": "accepted_model",
+    "reasons": [],
+    "seconds": 3.4852716000168584
+  },
+  {
+    "case": "symmetric",
+    "seed": 4,
+    "arm": "oracle",
+    "nmse": 0.1865888921231928,
+    "frequency_mae": 0.0,
+    "f0": 0.4943033212723463,
+    "drift": 0.013352895937832806
+  },
+  {
+    "case": "noise",
+    "seed": 0,
+    "arm": "constant",
+    "nmse": 1.0029514531556443,
+    "frequency_mae": null,
+    "f0": 0.8815506715506717,
+    "drift": 0.0
+  },
+  {
+    "case": "noise",
+    "seed": 0,
+    "arm": "stft",
+    "nmse": 1.006521395959643,
+    "frequency_mae": null,
+    "f0": 0.85,
+    "drift": -0.012799116357069162
+  },
+  {
+    "case": "noise",
+    "seed": 0,
+    "arm": "astronomy",
+    "nmse": 1.0185416724059226,
+    "frequency_mae": null,
+    "f0": 0.6957831252397374,
+    "drift": 0.013664496837697993,
+    "status": "unreliable",
+    "reasons": [
+      "low_explained_variation",
+      "local_signal_loss_or_model_mismatch"
+    ],
+    "seconds": 2.800121099979151
+  },
+  {
+    "case": "noise",
+    "seed": 1,
+    "arm": "constant",
+    "nmse": 1.0326153610795568,
+    "frequency_mae": null,
+    "f0": 1.4144566544566546,
+    "drift": 0.0
+  },
+  {
+    "case": "noise",
+    "seed": 1,
+    "arm": "stft",
+    "nmse": 1.0340440905393367,
+    "frequency_mae": null,
+    "f0": 0.85,
+    "drift": -0.015
+  },
+  {
+    "case": "noise",
+    "seed": 1,
+    "arm": "astronomy",
+    "nmse": 1.0349351084513572,
+    "frequency_mae": null,
+    "f0": 0.38957735936391724,
+    "drift": 0.02322194637740661,
+    "status": "unreliable",
+    "reasons": [
+      "low_explained_variation",
+      "local_signal_loss_or_model_mismatch"
+    ],
+    "seconds": 3.072257499967236
+  },
+  {
+    "case": "noise",
+    "seed": 2,
+    "arm": "constant",
+    "nmse": 1.0346986081367682,
+    "frequency_mae": null,
+    "f0": 0.8015262515262517,
+    "drift": 0.0
+  },
+  {
+    "case": "noise",
+    "seed": 2,
+    "arm": "stft",
+    "nmse": 1.0090288449020874,
+    "frequency_mae": null,
+    "f0": 0.85,
+    "drift": -0.012270019027347813
+  },
+  {
+    "case": "noise",
+    "seed": 2,
+    "arm": "astronomy",
+    "nmse": 1.0300424370241403,
+    "frequency_mae": null,
+    "f0": 0.7447631116241861,
+    "drift": 0.005628656400619425,
+    "status": "unreliable",
+    "reasons": [
+      "low_explained_variation",
+      "local_signal_loss_or_model_mismatch"
+    ],
+    "seconds": 2.4524516999954358
+  },
+  {
+    "case": "noise",
+    "seed": 3,
+    "arm": "constant",
+    "nmse": 1.0373122382919775,
+    "frequency_mae": null,
+    "f0": 0.3826373626373627,
+    "drift": 0.0
+  },
+  {
+    "case": "noise",
+    "seed": 3,
+    "arm": "stft",
+    "nmse": 1.03605133450662,
+    "frequency_mae": null,
+    "f0": 0.3,
+    "drift": 0.025
+  },
+  {
+    "case": "noise",
+    "seed": 3,
+    "arm": "astronomy",
+    "nmse": 1.0575798975643391,
+    "frequency_mae": null,
+    "f0": 0.31048616588737704,
+    "drift": 0.01327345732126817,
+    "status": "unreliable",
+    "reasons": [
+      "low_explained_variation",
+      "local_signal_loss_or_model_mismatch"
+    ],
+    "seconds": 1.8095142000238411
+  },
+  {
+    "case": "noise",
+    "seed": 4,
+    "arm": "constant",
+    "nmse": 1.0190229930915222,
+    "frequency_mae": null,
+    "f0": 0.6032356532356533,
+    "drift": 0.0
+  },
+  {
+    "case": "noise",
+    "seed": 4,
+    "arm": "stft",
+    "nmse": 1.0123153051124683,
+    "frequency_mae": null,
+    "f0": 0.633687274251806,
+    "drift": 0.025
+  },
+  {
+    "case": "noise",
+    "seed": 4,
+    "arm": "astronomy",
+    "nmse": 1.0155790645447182,
+    "frequency_mae": null,
+    "f0": 0.7704801294441697,
+    "drift": 0.011078372133978057,
+    "status": "unreliable",
+    "reasons": [
+      "low_explained_variation",
+      "local_signal_loss_or_model_mismatch"
+    ],
+    "seconds": 2.4316955999820493
+  }
+]

@@ -1,0 +1,76 @@
+{
+  "protocol_sha256": "3a54d4910834aa62e25d67feae37b0a473dd9466f268563517c26c1f950ac42b",
+  "true_f0": 0.7284321820151602,
+  "true_drift": -0.009,
+  "clock_report": {
+    "status": "accepted_model",
+    "reasons": [],
+    "time_origin": 0.0,
+    "frequency_initial": 0.7275188646070505,
+    "frequency_drift": -0.008958499465173526,
+    "explained_variation": 0.8073641006127872,
+    "local_explained_variation": [
+      0.7855094222096635,
+      0.7926802540503276,
+      0.8390693479506768,
+      0.8119777365524095,
+      0.8153071615942405,
+      0.7848737202670094
+    ],
+    "harmonics": 2,
+    "frequency_bounds": [
+      0.3,
+      0.85
+    ],
+    "drift_bounds": [
+      -0.015,
+      0.025
+    ],
+    "photometric_period_canonicalized": false,
+    "physical_rotation_identified": false,
+    "scope": "constant frequency drift; fixed harmonic amplitudes; phase relative to first sample",
+    "warning": "Photometric periodicity is not uniquely the physical rotation. Bounds are prior information."
+  },
+  "spectral_seconds": 0.3367420000140555,
+  "rows": [
+    {
+      "case": "decelerating",
+      "seed": 1,
+      "arm": "constant",
+      "nmse": 1.5886343001221959,
+      "frequency_mae": 0.1333295548590767,
+      "f0": 0.6368742368742369,
+      "drift": 0.0
+    },
+    {
+      "case": "decelerating",
+      "seed": 1,
+      "arm": "stft",
+      "nmse": 0.2053922182750163,
+      "frequency_mae": 0.0030222823857636682,
+      "f0": 0.7315719599243209,
+      "drift": -0.009246605714654299
+    },
+    {
+      "case": "decelerating",
+      "seed": 1,
+      "arm": "astronomy",
+      "nmse": 0.19885578707590384,
+      "frequency_mae": 0.00014060870745204472,
+      "f0": 0.7275188646070505,
+      "drift": -0.008958499465173526,
+      "status": "accepted_model",
+      "reasons": [],
+      "seconds": 2.0556972000049427
+    },
+    {
+      "case": "decelerating",
+      "seed": 1,
+      "arm": "oracle",
+      "nmse": 0.20041631618835481,
+      "frequency_mae": 0.0,
+      "f0": 0.7284321820151602,
+      "drift": -0.009
+    }
+  ]
+}

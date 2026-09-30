@@ -1,0 +1,75 @@
+{
+  "protocol_sha256": "3a54d4910834aa62e25d67feae37b0a473dd9466f268563517c26c1f950ac42b",
+  "true_f0": 0.4812739253607351,
+  "true_drift": 0.014882193236754954,
+  "clock_report": {
+    "status": "accepted_model",
+    "reasons": [],
+    "time_origin": 0.025,
+    "frequency_initial": 0.47958731323043347,
+    "frequency_drift": 0.01508269684897317,
+    "explained_variation": 0.8177427034658699,
+    "local_explained_variation": [
+      0.8547941969706712,
+      0.8012929672975411,
+      0.8212193941300912,
+      0.7714991459972098,
+      0.839665685821734
+    ],
+    "harmonics": 2,
+    "frequency_bounds": [
+      0.3,
+      0.85
+    ],
+    "drift_bounds": [
+      -0.015,
+      0.025
+    ],
+    "photometric_period_canonicalized": false,
+    "physical_rotation_identified": false,
+    "scope": "constant frequency drift; fixed harmonic amplitudes; phase relative to first sample",
+    "warning": "Photometric periodicity is not uniquely the physical rotation. Bounds are prior information."
+  },
+  "spectral_seconds": 0.34597090003080666,
+  "rows": [
+    {
+      "case": "gaps",
+      "seed": 2,
+      "arm": "constant",
+      "nmse": 1.0861624645021672,
+      "frequency_mae": 0.11840922367649126,
+      "f0": 0.7346031746031747,
+      "drift": 0.0
+    },
+    {
+      "case": "gaps",
+      "seed": 2,
+      "arm": "stft",
+      "nmse": 0.9083279567691533,
+      "frequency_mae": 0.022703384261825416,
+      "f0": 0.3,
+      "drift": 0.022738587622549003
+    },
+    {
+      "case": "gaps",
+      "seed": 2,
+      "arm": "astronomy",
+      "nmse": 0.15434017854169899,
+      "frequency_mae": 0.0029446485513942144,
+      "f0": 0.4792102458092091,
+      "drift": 0.01508269684897317,
+      "status": "accepted_model",
+      "reasons": [],
+      "seconds": 2.6240377000067383
+    },
+    {
+      "case": "gaps",
+      "seed": 2,
+      "arm": "oracle",
+      "nmse": 0.14563297310919365,
+      "frequency_mae": 0.0,
+      "f0": 0.4812739253607351,
+      "drift": 0.014882193236754954
+    }
+  ]
+}

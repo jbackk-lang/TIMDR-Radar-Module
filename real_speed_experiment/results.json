@@ -1,0 +1,1586 @@
+{
+  "source": "https://github.com/openradarinitiative/open_radar_datasets",
+  "license": "CC BY-NC 4.0; Gusland et al. 2021, DOI 10.1109/RadarConf2147009.2021.9455239",
+  "reference": "Measured radial velocity from same radar, NOT independent ground truth",
+  "protocol": "All cached eval tracks; track-macro MAE. No new split. Sign fitted on dev only. Fixed median size 3; offline, no gap bridging. No parameter search.",
+  "limitations": "Median is a classical coherence control, NOT the astronomy clock and NOT evidence of TIMDR novelty. Cached windows only, not full dataset.",
+  "sign": 1,
+  "dev_tracks": 210,
+  "summary": {
+    "bicycle": {
+      "tracks": 19,
+      "frames": 3600,
+      "doppler_peak": 0.8340349210396071,
+      "median3": 0.8413560927395453
+    },
+    "person": {
+      "tracks": 21,
+      "frames": 2800,
+      "doppler_peak": 0.45744303955745513,
+      "median3": 0.48199992933410746
+    },
+    "uav": {
+      "tracks": 20,
+      "frames": 2532,
+      "doppler_peak": 2.1993386600642806,
+      "median3": 2.285932420063961
+    },
+    "vehicle": {
+      "tracks": 80,
+      "frames": 12307,
+      "doppler_peak": 2.1083577444400547,
+      "median3": 2.0963431870577165
+    },
+    "ALL": {
+      "tracks": 140,
+      "frames": 21239,
+      "doppler_peak": 1.7007740006210648,
+      "median3": 1.710956197456887
+    }
+  },
+  "tracks": [
+    {
+      "track": "track_006",
+      "class": "vehicle",
+      "frames": 80,
+      "doppler_peak_mae_m_s": 7.582317182476096,
+      "median3_mae_m_s": 7.734864852390689
+    },
+    {
+      "track": "track_012",
+      "class": "vehicle",
+      "frames": 80,
+      "doppler_peak_mae_m_s": 7.542032961041114,
+      "median3_mae_m_s": 7.482231075021633
+    },
+    {
+      "track": "track_013",
+      "class": "person",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.5617441802334943,
+      "median3_mae_m_s": 0.5623380037895395
+    },
+    {
+      "track": "track_014",
+      "class": "bicycle",
+      "frames": 120,
+      "doppler_peak_mae_m_s": 3.1801952569983407,
+      "median3_mae_m_s": 3.270767452953569
+    },
+    {
+      "track": "track_015",
+      "class": "bicycle",
+      "frames": 80,
+      "doppler_peak_mae_m_s": 2.8882097673078526,
+      "median3_mae_m_s": 2.695692973507949
+    },
+    {
+      "track": "track_023",
+      "class": "vehicle",
+      "frames": 80,
+      "doppler_peak_mae_m_s": 1.030977325035463,
+      "median3_mae_m_s": 0.8531318517645008
+    },
+    {
+      "track": "track_024",
+      "class": "vehicle",
+      "frames": 80,
+      "doppler_peak_mae_m_s": 2.483073009034807,
+      "median3_mae_m_s": 2.654186433295803
+    },
+    {
+      "track": "track_025",
+      "class": "vehicle",
+      "frames": 160,
+      "doppler_peak_mae_m_s": 3.6867169119303456,
+      "median3_mae_m_s": 3.515980779601526
+    },
+    {
+      "track": "track_026",
+      "class": "vehicle",
+      "frames": 160,
+      "doppler_peak_mae_m_s": 1.8052990824320125,
+      "median3_mae_m_s": 1.4419472449996
+    },
+    {
+      "track": "track_028",
+      "class": "vehicle",
+      "frames": 80,
+      "doppler_peak_mae_m_s": 3.284152354356748,
+      "median3_mae_m_s": 3.289223363337365
+    },
+    {
+      "track": "track_047",
+      "class": "vehicle",
+      "frames": 80,
+      "doppler_peak_mae_m_s": 5.929308627451971,
+      "median3_mae_m_s": 5.275875279312459
+    },
+    {
+      "track": "track_056",
+      "class": "vehicle",
+      "frames": 80,
+      "doppler_peak_mae_m_s": 5.578524048005161,
+      "median3_mae_m_s": 5.624009436864166
+    },
+    {
+      "track": "track_066",
+      "class": "vehicle",
+      "frames": 120,
+      "doppler_peak_mae_m_s": 5.657019458280174,
+      "median3_mae_m_s": 5.752856749692797
+    },
+    {
+      "track": "track_073",
+      "class": "vehicle",
+      "frames": 160,
+      "doppler_peak_mae_m_s": 0.5545120387306134,
+      "median3_mae_m_s": 0.5776401212401194
+    },
+    {
+      "track": "track_074",
+      "class": "vehicle",
+      "frames": 160,
+      "doppler_peak_mae_m_s": 1.7875073819720897,
+      "median3_mae_m_s": 1.790922169344713
+    },
+    {
+      "track": "track_075",
+      "class": "vehicle",
+      "frames": 38,
+      "doppler_peak_mae_m_s": 0.8549362471040595,
+      "median3_mae_m_s": 0.7281763037248509
+    },
+    {
+      "track": "track_078",
+      "class": "vehicle",
+      "frames": 40,
+      "doppler_peak_mae_m_s": 2.9025660006431453,
+      "median3_mae_m_s": 2.7614813306538233
+    },
+    {
+      "track": "track_080",
+      "class": "vehicle",
+      "frames": 80,
+      "doppler_peak_mae_m_s": 1.2402314097740759,
+      "median3_mae_m_s": 1.2763293852482454
+    },
+    {
+      "track": "track_083",
+      "class": "vehicle",
+      "frames": 40,
+      "doppler_peak_mae_m_s": 0.866610156717815,
+      "median3_mae_m_s": 0.9169224092542301
+    },
+    {
+      "track": "track_085",
+      "class": "vehicle",
+      "frames": 33,
+      "doppler_peak_mae_m_s": 1.8713564287792444,
+      "median3_mae_m_s": 1.8897629226283787
+    },
+    {
+      "track": "track_087",
+      "class": "person",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.2594009447399157,
+      "median3_mae_m_s": 0.27326034052551346
+    },
+    {
+      "track": "track_088",
+      "class": "person",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.3153653862294232,
+      "median3_mae_m_s": 0.3232173850482349
+    },
+    {
+      "track": "track_089",
+      "class": "person",
+      "frames": 160,
+      "doppler_peak_mae_m_s": 0.7031771915377827,
+      "median3_mae_m_s": 0.7419628849100616
+    },
+    {
+      "track": "track_090",
+      "class": "person",
+      "frames": 120,
+      "doppler_peak_mae_m_s": 0.6607364067639276,
+      "median3_mae_m_s": 0.6701946965936383
+    },
+    {
+      "track": "track_114",
+      "class": "bicycle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.4306021711595289,
+      "median3_mae_m_s": 0.4355136564446086
+    },
+    {
+      "track": "track_115",
+      "class": "bicycle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.2912864771248647,
+      "median3_mae_m_s": 0.32540778150469696
+    },
+    {
+      "track": "track_116",
+      "class": "bicycle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.3940533975041975,
+      "median3_mae_m_s": 0.43708885473760745
+    },
+    {
+      "track": "track_117",
+      "class": "bicycle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.7571809401583465,
+      "median3_mae_m_s": 0.7706360134711109
+    },
+    {
+      "track": "track_118",
+      "class": "bicycle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.531324574271189,
+      "median3_mae_m_s": 0.5648301345450146
+    },
+    {
+      "track": "track_119",
+      "class": "bicycle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 1.7694667447132608,
+      "median3_mae_m_s": 1.8106853275191424
+    },
+    {
+      "track": "track_120",
+      "class": "bicycle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.7795245192812341,
+      "median3_mae_m_s": 0.8268925442176521
+    },
+    {
+      "track": "track_121",
+      "class": "bicycle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.3051666974329255,
+      "median3_mae_m_s": 0.3415128135326589
+    },
+    {
+      "track": "track_122",
+      "class": "bicycle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.5270708130164975,
+      "median3_mae_m_s": 0.561732454810469
+    },
+    {
+      "track": "track_125",
+      "class": "bicycle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.431256933844467,
+      "median3_mae_m_s": 0.4123818184875181
+    },
+    {
+      "track": "track_127",
+      "class": "bicycle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.5427716342455802,
+      "median3_mae_m_s": 0.5701365206088537
+    },
+    {
+      "track": "track_129",
+      "class": "bicycle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.7488996294397455,
+      "median3_mae_m_s": 0.7636462532714178
+    },
+    {
+      "track": "track_131",
+      "class": "bicycle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.5849789372438581,
+      "median3_mae_m_s": 0.5778931650353338
+    },
+    {
+      "track": "track_132",
+      "class": "bicycle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.7937079007952613,
+      "median3_mae_m_s": 0.7903275534977584
+    },
+    {
+      "track": "track_133",
+      "class": "bicycle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.2185280448645151,
+      "median3_mae_m_s": 0.19121149124270176
+    },
+    {
+      "track": "track_135",
+      "class": "bicycle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.44304167367740005,
+      "median3_mae_m_s": 0.4075012411778844
+    },
+    {
+      "track": "track_136",
+      "class": "bicycle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.22939738667346865,
+      "median3_mae_m_s": 0.23190771148541245
+    },
+    {
+      "track": "track_137",
+      "class": "person",
+      "frames": 160,
+      "doppler_peak_mae_m_s": 0.3033141762644262,
+      "median3_mae_m_s": 0.36972478748829357
+    },
+    {
+      "track": "track_138",
+      "class": "person",
+      "frames": 160,
+      "doppler_peak_mae_m_s": 0.2702524502547411,
+      "median3_mae_m_s": 0.2835677262957287
+    },
+    {
+      "track": "track_144",
+      "class": "person",
+      "frames": 40,
+      "doppler_peak_mae_m_s": 0.23466124272797356,
+      "median3_mae_m_s": 0.2884900891359254
+    },
+    {
+      "track": "track_145",
+      "class": "person",
+      "frames": 160,
+      "doppler_peak_mae_m_s": 0.3755338313964186,
+      "median3_mae_m_s": 0.39255379408327
+    },
+    {
+      "track": "track_146",
+      "class": "person",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.5926219215475816,
+      "median3_mae_m_s": 0.6112984367218801
+    },
+    {
+      "track": "track_150",
+      "class": "person",
+      "frames": 80,
+      "doppler_peak_mae_m_s": 0.5466883670446163,
+      "median3_mae_m_s": 0.5712159318987039
+    },
+    {
+      "track": "track_151",
+      "class": "person",
+      "frames": 40,
+      "doppler_peak_mae_m_s": 0.5261533304690655,
+      "median3_mae_m_s": 0.5514648238131364
+    },
+    {
+      "track": "track_152",
+      "class": "person",
+      "frames": 120,
+      "doppler_peak_mae_m_s": 0.5191864765536821,
+      "median3_mae_m_s": 0.5529607083207316
+    },
+    {
+      "track": "track_153",
+      "class": "person",
+      "frames": 40,
+      "doppler_peak_mae_m_s": 0.1681163681355924,
+      "median3_mae_m_s": 0.18075786645015257
+    },
+    {
+      "track": "track_154",
+      "class": "person",
+      "frames": 40,
+      "doppler_peak_mae_m_s": 0.5087392114822261,
+      "median3_mae_m_s": 0.5276784423766075
+    },
+    {
+      "track": "track_155",
+      "class": "person",
+      "frames": 40,
+      "doppler_peak_mae_m_s": 0.4833718207357534,
+      "median3_mae_m_s": 0.5609289591228365
+    },
+    {
+      "track": "track_156",
+      "class": "person",
+      "frames": 40,
+      "doppler_peak_mae_m_s": 0.3709415072475714,
+      "median3_mae_m_s": 0.38833699376694364
+    },
+    {
+      "track": "track_157",
+      "class": "uav",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.6149088422624327,
+      "median3_mae_m_s": 0.5908222609653869
+    },
+    {
+      "track": "track_158",
+      "class": "uav",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.9398247266259961,
+      "median3_mae_m_s": 1.0091058152264687
+    },
+    {
+      "track": "track_159",
+      "class": "uav",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.7124190286947939,
+      "median3_mae_m_s": 0.707973350953985
+    },
+    {
+      "track": "track_160",
+      "class": "uav",
+      "frames": 40,
+      "doppler_peak_mae_m_s": 4.698352567429064,
+      "median3_mae_m_s": 5.04055861214064
+    },
+    {
+      "track": "track_161",
+      "class": "uav",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 1.493622538001889,
+      "median3_mae_m_s": 1.5676624373281647
+    },
+    {
+      "track": "track_162",
+      "class": "uav",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 1.81106466056502,
+      "median3_mae_m_s": 1.8760026595985033
+    },
+    {
+      "track": "track_163",
+      "class": "uav",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 1.9748573367491336,
+      "median3_mae_m_s": 2.0783618794922587
+    },
+    {
+      "track": "track_164",
+      "class": "uav",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 1.4817998756175226,
+      "median3_mae_m_s": 1.5153080663573433
+    },
+    {
+      "track": "track_165",
+      "class": "uav",
+      "frames": 40,
+      "doppler_peak_mae_m_s": 4.629937332267245,
+      "median3_mae_m_s": 4.73759502508315
+    },
+    {
+      "track": "track_190",
+      "class": "uav",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.5385597370989056,
+      "median3_mae_m_s": 0.5074632286962021
+    },
+    {
+      "track": "track_193",
+      "class": "uav",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.5847785834172107,
+      "median3_mae_m_s": 0.6161281624980139
+    },
+    {
+      "track": "track_194",
+      "class": "uav",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 1.2345916121453238,
+      "median3_mae_m_s": 1.2681594267810399
+    },
+    {
+      "track": "track_195",
+      "class": "uav",
+      "frames": 40,
+      "doppler_peak_mae_m_s": 3.6663951664055547,
+      "median3_mae_m_s": 3.793051275600736
+    },
+    {
+      "track": "track_196",
+      "class": "uav",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 1.643155441626563,
+      "median3_mae_m_s": 1.7001103569524656
+    },
+    {
+      "track": "track_197",
+      "class": "uav",
+      "frames": 33,
+      "doppler_peak_mae_m_s": 2.9248113003638383,
+      "median3_mae_m_s": 3.072576761091549
+    },
+    {
+      "track": "track_198",
+      "class": "uav",
+      "frames": 80,
+      "doppler_peak_mae_m_s": 1.7747997084083273,
+      "median3_mae_m_s": 1.8316393216414326
+    },
+    {
+      "track": "track_199",
+      "class": "uav",
+      "frames": 19,
+      "doppler_peak_mae_m_s": 3.3527065923093917,
+      "median3_mae_m_s": 3.699828924369034
+    },
+    {
+      "track": "track_200",
+      "class": "uav",
+      "frames": 20,
+      "doppler_peak_mae_m_s": 1.2815327447272662,
+      "median3_mae_m_s": 1.2815327447272662
+    },
+    {
+      "track": "track_201",
+      "class": "uav",
+      "frames": 31,
+      "doppler_peak_mae_m_s": 2.597016650590239,
+      "median3_mae_m_s": 2.5398171174053186
+    },
+    {
+      "track": "track_202",
+      "class": "uav",
+      "frames": 29,
+      "doppler_peak_mae_m_s": 6.031638755979894,
+      "median3_mae_m_s": 6.284950974370257
+    },
+    {
+      "track": "track_283",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 1.3505245854573844,
+      "median3_mae_m_s": 1.3577902137071374
+    },
+    {
+      "track": "track_284",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 2.0971635651492453,
+      "median3_mae_m_s": 2.0740466331661285
+    },
+    {
+      "track": "track_285",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 2.604713921817929,
+      "median3_mae_m_s": 2.6058568510080984
+    },
+    {
+      "track": "track_286",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 2.424773356859476,
+      "median3_mae_m_s": 2.381951513314235
+    },
+    {
+      "track": "track_287",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.9132242015550588,
+      "median3_mae_m_s": 0.9203925025629832
+    },
+    {
+      "track": "track_288",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 2.988677463984983,
+      "median3_mae_m_s": 3.0332886695963466
+    },
+    {
+      "track": "track_289",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 2.6906295312594786,
+      "median3_mae_m_s": 2.659185255402841
+    },
+    {
+      "track": "track_290",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 4.298923304002467,
+      "median3_mae_m_s": 4.426181128151679
+    },
+    {
+      "track": "track_291",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 1.0446843894829176,
+      "median3_mae_m_s": 1.0183940401939338
+    },
+    {
+      "track": "track_292",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 3.3080240356439448,
+      "median3_mae_m_s": 3.313966109371846
+    },
+    {
+      "track": "track_293",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 5.360900488441803,
+      "median3_mae_m_s": 5.347428863042612
+    },
+    {
+      "track": "track_294",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 1.5090972549717336,
+      "median3_mae_m_s": 1.463023518551764
+    },
+    {
+      "track": "track_295",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 3.923210619559206,
+      "median3_mae_m_s": 4.1820004193661955
+    },
+    {
+      "track": "track_296",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.6390372918099037,
+      "median3_mae_m_s": 0.5809601601423409
+    },
+    {
+      "track": "track_297",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 1.9137253862358126,
+      "median3_mae_m_s": 1.9927114053161068
+    },
+    {
+      "track": "track_298",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 3.4449196224281873,
+      "median3_mae_m_s": 3.067338426163806
+    },
+    {
+      "track": "track_299",
+      "class": "vehicle",
+      "frames": 120,
+      "doppler_peak_mae_m_s": 4.4599204662580325,
+      "median3_mae_m_s": 4.55552723345758
+    },
+    {
+      "track": "track_300",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.5253844733927843,
+      "median3_mae_m_s": 0.5171645402140751
+    },
+    {
+      "track": "track_301",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.6419305644872653,
+      "median3_mae_m_s": 0.6252934131801943
+    },
+    {
+      "track": "track_302",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.5773063601976841,
+      "median3_mae_m_s": 0.5768603886799238
+    },
+    {
+      "track": "track_303",
+      "class": "vehicle",
+      "frames": 160,
+      "doppler_peak_mae_m_s": 0.18262439092334284,
+      "median3_mae_m_s": 0.17109411972137134
+    },
+    {
+      "track": "track_304",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.29721046847025356,
+      "median3_mae_m_s": 0.2717867419103801
+    },
+    {
+      "track": "track_305",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.7350513014606739,
+      "median3_mae_m_s": 0.7618460384618604
+    },
+    {
+      "track": "track_306",
+      "class": "vehicle",
+      "frames": 160,
+      "doppler_peak_mae_m_s": 1.1876666811366827,
+      "median3_mae_m_s": 1.219423457173496
+    },
+    {
+      "track": "track_307",
+      "class": "vehicle",
+      "frames": 120,
+      "doppler_peak_mae_m_s": 0.6932863896236634,
+      "median3_mae_m_s": 0.741293358605199
+    },
+    {
+      "track": "track_308",
+      "class": "vehicle",
+      "frames": 40,
+      "doppler_peak_mae_m_s": 0.4134972353162814,
+      "median3_mae_m_s": 0.38814190087228767
+    },
+    {
+      "track": "track_309",
+      "class": "vehicle",
+      "frames": 80,
+      "doppler_peak_mae_m_s": 0.4459630067299149,
+      "median3_mae_m_s": 0.4822538830437454
+    },
+    {
+      "track": "track_310",
+      "class": "vehicle",
+      "frames": 80,
+      "doppler_peak_mae_m_s": 1.0097070917695015,
+      "median3_mae_m_s": 0.9779257895284124
+    },
+    {
+      "track": "track_311",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.5132539389554139,
+      "median3_mae_m_s": 0.5169712009634145
+    },
+    {
+      "track": "track_312",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.2687377216543389,
+      "median3_mae_m_s": 0.25194482691099684
+    },
+    {
+      "track": "track_313",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.31400982770462893,
+      "median3_mae_m_s": 0.31457734660072056
+    },
+    {
+      "track": "track_314",
+      "class": "vehicle",
+      "frames": 160,
+      "doppler_peak_mae_m_s": 0.43908588920293196,
+      "median3_mae_m_s": 0.42503723635130364
+    },
+    {
+      "track": "track_315",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.9631573568207323,
+      "median3_mae_m_s": 1.0365087358151295
+    },
+    {
+      "track": "track_316",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.7328883056916625,
+      "median3_mae_m_s": 0.7682840625614327
+    },
+    {
+      "track": "track_317",
+      "class": "vehicle",
+      "frames": 160,
+      "doppler_peak_mae_m_s": 1.0768016241521636,
+      "median3_mae_m_s": 1.1190700586019469
+    },
+    {
+      "track": "track_318",
+      "class": "vehicle",
+      "frames": 29,
+      "doppler_peak_mae_m_s": 1.167976721155792,
+      "median3_mae_m_s": 1.0500555160430378
+    },
+    {
+      "track": "track_319",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.9623387400960379,
+      "median3_mae_m_s": 0.9822828007158315
+    },
+    {
+      "track": "track_320",
+      "class": "vehicle",
+      "frames": 160,
+      "doppler_peak_mae_m_s": 0.5069891451087192,
+      "median3_mae_m_s": 0.507202456871525
+    },
+    {
+      "track": "track_321",
+      "class": "vehicle",
+      "frames": 40,
+      "doppler_peak_mae_m_s": 0.15213858282895015,
+      "median3_mae_m_s": 0.1616290227986038
+    },
+    {
+      "track": "track_322",
+      "class": "vehicle",
+      "frames": 23,
+      "doppler_peak_mae_m_s": 0.46011791354719067,
+      "median3_mae_m_s": 0.4931052659112447
+    },
+    {
+      "track": "track_323",
+      "class": "vehicle",
+      "frames": 160,
+      "doppler_peak_mae_m_s": 1.3249414458403268,
+      "median3_mae_m_s": 1.2955064489316979
+    },
+    {
+      "track": "track_324",
+      "class": "vehicle",
+      "frames": 24,
+      "doppler_peak_mae_m_s": 1.4131656941478508,
+      "median3_mae_m_s": 1.4527384214213577
+    },
+    {
+      "track": "track_325",
+      "class": "vehicle",
+      "frames": 160,
+      "doppler_peak_mae_m_s": 2.3961443185935414,
+      "median3_mae_m_s": 2.467387283988333
+    },
+    {
+      "track": "track_326",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.8978971257028162,
+      "median3_mae_m_s": 0.9019454955467792
+    },
+    {
+      "track": "track_327",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.8897885489179106,
+      "median3_mae_m_s": 0.845624299177852
+    },
+    {
+      "track": "track_328",
+      "class": "person",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.6625397979820237,
+      "median3_mae_m_s": 0.6935696679128444
+    },
+    {
+      "track": "track_329",
+      "class": "person",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.6043551480881045,
+      "median3_mae_m_s": 0.6277273428043171
+    },
+    {
+      "track": "track_330",
+      "class": "person",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.44208100764654573,
+      "median3_mae_m_s": 0.45317087018811103
+    },
+    {
+      "track": "track_331",
+      "class": "person",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 0.4973230636256907,
+      "median3_mae_m_s": 0.4975787647697858
+    },
+    {
+      "track": "track_332",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 1.8948696643519674,
+      "median3_mae_m_s": 1.9098912794117007
+    },
+    {
+      "track": "track_333",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 1.3685667323430266,
+      "median3_mae_m_s": 1.4025157412001625
+    },
+    {
+      "track": "track_334",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 1.9337113151060326,
+      "median3_mae_m_s": 1.9742386395824951
+    },
+    {
+      "track": "track_335",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 2.949884059152877,
+      "median3_mae_m_s": 2.7353502445163302
+    },
+    {
+      "track": "track_336",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 1.5301619974946925,
+      "median3_mae_m_s": 1.523536771898448
+    },
+    {
+      "track": "track_337",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 5.56948543397996,
+      "median3_mae_m_s": 5.540106826650504
+    },
+    {
+      "track": "track_338",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 3.4958800656269613,
+      "median3_mae_m_s": 3.5763212700604208
+    },
+    {
+      "track": "track_339",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 3.0228141293194257,
+      "median3_mae_m_s": 2.9219468272301117
+    },
+    {
+      "track": "track_340",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 1.9779731195782393,
+      "median3_mae_m_s": 2.045161465701124
+    },
+    {
+      "track": "track_341",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 1.9697256657533069,
+      "median3_mae_m_s": 1.9028198713770155
+    },
+    {
+      "track": "track_342",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 1.9529829690693767,
+      "median3_mae_m_s": 1.9280162818337891
+    },
+    {
+      "track": "track_343",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 2.9372870512699216,
+      "median3_mae_m_s": 2.8547609957568607
+    },
+    {
+      "track": "track_344",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 4.514737717167763,
+      "median3_mae_m_s": 4.6702309961083515
+    },
+    {
+      "track": "track_345",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 2.386294383675722,
+      "median3_mae_m_s": 2.4780319422313837
+    },
+    {
+      "track": "track_346",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 4.265343656412183,
+      "median3_mae_m_s": 4.400867885306023
+    },
+    {
+      "track": "track_347",
+      "class": "vehicle",
+      "frames": 200,
+      "doppler_peak_mae_m_s": 1.9876638017005859,
+      "median3_mae_m_s": 1.7888234628376805
+    },
+    {
+      "track": "track_348",
+      "class": "vehicle",
+      "frames": 40,
+      "doppler_peak_mae_m_s": 1.9728448234844052,
+      "median3_mae_m_s": 1.987093635768863
+    },
+    {
+      "track": "track_349",
+      "class": "vehicle",
+      "frames": 40,
+      "doppler_peak_mae_m_s": 2.1200419974063713,
+      "median3_mae_m_s": 2.199202065653359
+    }
+  ],
+  "inputs": [
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_006.npz",
+      "sha256": "2eaea530651b5f859d2289d59afd04d4a1bb62a6202ca91fee5cf249634c1338"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_012.npz",
+      "sha256": "1c3d835ad3038bfc21183544c558c69616e22a882925a92301dbecbc85ee5931"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_013.npz",
+      "sha256": "33491d358168c36d26e91169790cc5fcbdd3e3cfc1a8ba0d5627f2e00a3140b1"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_014.npz",
+      "sha256": "2c8ee59bd159736bfff606f4e37805491a1f12e491dc4bc44e876fd6687d1851"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_015.npz",
+      "sha256": "05feae9ed2a4f7978f67c75d70771d2c28e5da4b4758b49fdb0750e65de6c8a7"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_023.npz",
+      "sha256": "7f0a2b778206f112ea306688392b913b469df88e66cb528bbd29a31bd947f971"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_024.npz",
+      "sha256": "b70601ebd94a4edcc8de39ecf26c452d92ccbf97fecf2a553faa19ee5d6f7745"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_025.npz",
+      "sha256": "296c3b4decf6c8183715e71bc6a4cef816a6356fe1cbc3ca36fa313e7ea6cbc0"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_026.npz",
+      "sha256": "eaf09b6093a0504f3031c62b3777c549c1a8ed32f976e78e8c23ef39b8d7433f"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_028.npz",
+      "sha256": "b08de5a30bf05aee774de9f140870a1e0474c37a993a21798521976b37c959c0"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_047.npz",
+      "sha256": "6ea0839995f391701779f6725db15df98cfbe3805b448603eed8fb181f099994"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_056.npz",
+      "sha256": "5ff907eeeda45e120b86b52a37eaa2d17be853f79d130c5f85ac42052deb6e8e"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_066.npz",
+      "sha256": "ae4ccd492ffd59a225b42cda7305476e888f1364b45c62e3186f2547e511e0af"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_073.npz",
+      "sha256": "3b6f0ac4c108d3d0d717c1652ede628b0cb005f0d8890c1cd38c1776f17da791"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_074.npz",
+      "sha256": "7cc5ac14d5bd4ebff08647e9d25d7bb7853010a743641b51539c05a89fcacf90"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_075.npz",
+      "sha256": "a47dc734b5c166c7c7476b972d3672ae32a27c9a86c2313e39336eab506106d7"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_078.npz",
+      "sha256": "0a529a27d7f2f4dbca6908d2b2e02ba7c3962784eff1237e2e7ec789c7fc0e25"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_080.npz",
+      "sha256": "5cba79615ce7892af7fdbda67c21d53f22b03e7d926464cfc7868d5b4b310297"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_083.npz",
+      "sha256": "b99273754e62cd9b148a97fa96771ac9810b03f753e8f924880d793a705fbcbf"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_085.npz",
+      "sha256": "a1ced8a257a78ecd756ea90a39f47fff851113ca68cbfb7ac62664d6a4870d5a"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_087.npz",
+      "sha256": "bb310b42a58c162ee079a4864e8a83050056144bf4bfbbec50f3d507a086908b"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_088.npz",
+      "sha256": "76e9f5cfaad0bad8e462477e6f8f169cb948942aa7c3b1db0cf3a5f95680e740"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_089.npz",
+      "sha256": "6533a5e3932b87eab36398f123ba37d210ddd47b11148e68fc6f3196e24fcea0"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_090.npz",
+      "sha256": "f5409e090cd56ce6b19b838392e79d9e57e2ed59376c9d72370893291b1bdfe4"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_114.npz",
+      "sha256": "c81564bdb16962db0d4c15efd814879f86f434d2a7e5c300993d4132ab082ceb"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_115.npz",
+      "sha256": "bd436c75d43f67d4fcc65493af8beb72911481ac9aa3d3fa052bbff6362b5a42"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_116.npz",
+      "sha256": "64b414eb99fbcc328e475b83c6811d692aabbb0ba0d8dcd09fab3f90564cc1e8"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_117.npz",
+      "sha256": "bf70ec8152b0a2df43f275d7fc2f01b0af2c95ecdd962abec0d8bd5ebd1a6a97"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_118.npz",
+      "sha256": "9cfe38383a026bff873ec2160baca638be0925b28753d5a4d0937a3eb4568e1f"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_119.npz",
+      "sha256": "7aa92ca3cdd8a55e1997df03ca264b9ff7c9715b11ca6c52ba94b0232dd47c5a"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_120.npz",
+      "sha256": "3022125a9a17e50d00b3ae50352bb992bf342409a2f7d9636cae91ab36a48c01"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_121.npz",
+      "sha256": "23a43cfa58eaf1dad48589e6af210caf4a4e6327ac90208a9c234cf3538d932f"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_122.npz",
+      "sha256": "928566f9716398617ff88862c91dba45ea01df38405d33d0928dea7572f0f3ff"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_125.npz",
+      "sha256": "e5f5efd7b22db61630ac9ab9362ccac6c32a26dc4a7dd56c8161b4d1edf65c8a"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_127.npz",
+      "sha256": "a4bad1ba5903dc1fd078af2a8da9d33d27d20414b8bc7f59f1b0e8c3443aaf41"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_129.npz",
+      "sha256": "82736b96ed07b826bc3afee5bc82107d57805e20730192bf0825815461990c31"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_131.npz",
+      "sha256": "880dd485ca9c5fbfe011135c050cc5836681c711c164ee0f9ec73bcdfbe73507"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_132.npz",
+      "sha256": "9769e72f6f0d415566073fbc7067f15167c33d802caafd0685d6f09b3e3778b6"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_133.npz",
+      "sha256": "9370ab4c5dafeb3d6c9700492eaf2eab497267445751171bf67a7933bf82ebfa"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_135.npz",
+      "sha256": "99456e419eecfdf8253f40e28c14416e5d126e737038e1156d97510c5be8d8db"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_136.npz",
+      "sha256": "26d5773e38613795cea702358121b98d49f6898756586b42f5328dcfa015c12c"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_137.npz",
+      "sha256": "826be0ae8a47f035b11ea5960a21d4465d4109adb65ac7513daf52fc9130eb21"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_138.npz",
+      "sha256": "10c29725011737009b8b14bca854771375a38893259971e538699096fc3f8ec0"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_144.npz",
+      "sha256": "7a530438d971510836063ad0ca1a12eb9fa32ca9d0e09fe1ed4513a6f2a04b10"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_145.npz",
+      "sha256": "d0b03397f6f09a896203df76536128fb51af056177c193190fcbc5f95e668828"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_146.npz",
+      "sha256": "7f896ace673e3fda150c5b5af0eab22e2e5421b8775349e4c777642bbb395311"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_150.npz",
+      "sha256": "372f48f4a7ff1f469aff231a296960489fb1829636ac243ce813129f66d90b2d"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_151.npz",
+      "sha256": "0d1198b0f7afbd69e73cba74024ca7ac43695311cd481740be5cd084093ec4eb"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_152.npz",
+      "sha256": "ea2e60bf2fddab16098cd057a65f5180618eca616d14e63745c170fc91ff2fc7"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_153.npz",
+      "sha256": "e4393171f32f12964e2d8d8519f3f3771c8085d1025e7c43b6a1c551a1444ad4"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_154.npz",
+      "sha256": "48eb3b4dff07e9e0deab6a51c4a7c0553c5a7e9006f60038b68fa4769e385a0c"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_155.npz",
+      "sha256": "5c7d3ac8cb4e9294972e6d36143e615e7c516cb8e35d943b1ad06eaf2bf64d8f"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_156.npz",
+      "sha256": "40d12d0093e574f5de6b9f8b5f9c682e006820bac2dfad5942022b970a868601"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_157.npz",
+      "sha256": "3347eab3967e242914e6dde5a98e57e745d502769b94f26dc5ae213126120bd7"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_158.npz",
+      "sha256": "a8ec81f2632e8c23419f078cb72d39ad8ba41f3356442eaa5ee98776381aedf0"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_159.npz",
+      "sha256": "49d0836e8a62d0a682ca37fd495a0ba352a694e3a5f258e0d79478782b016560"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_160.npz",
+      "sha256": "4af67a7f43ae7972b407e203f64d633f3d8dbdc86f2812f446044cf383208d06"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_161.npz",
+      "sha256": "9dea24f52f269067fee64ea03b039a2e71ceee0330a16c2c842ccfd410bc70d4"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_162.npz",
+      "sha256": "a9dfee2076269874859fd186e38e30cd580e60abd3d676bbafec5d1c87bab98b"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_163.npz",
+      "sha256": "3c7294477158d239c52ae19df0712751c9d8a14036befd78ef053866f0e49d2b"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_164.npz",
+      "sha256": "d5900519bd335e432ed844e117608aa74f0efeeb5117661d33170c68b8f47101"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_165.npz",
+      "sha256": "d79a00e48703feaccb5d754608d15c384cd4733209916088f2eaff647a7dc7f2"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_190.npz",
+      "sha256": "ac601748bdad5d8054e33b9f49ece179add6ed79c9ee65ec3b2b3d8c5ff45562"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_193.npz",
+      "sha256": "4b2c7880f60d97928c0f80ffb0e78fa3bf4d804ce02cded2d716081c33882b57"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_194.npz",
+      "sha256": "2602b3967295edeb9c3480c3c194dd4024e3e7bfd32b1288ebe8600bcea42fb6"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_195.npz",
+      "sha256": "e03eac33f162d111e793c162af357433ee67a90605638cbeff035c72eac8fd4d"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_196.npz",
+      "sha256": "3a2f7188c9b92457c4c301cfaf4183c243b594217faf13c652a4cc484fa95ad2"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_197.npz",
+      "sha256": "de0d1f5537522d8bac85a8208ab61a28242f898b2da4de0f3aae75518ff74bb0"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_198.npz",
+      "sha256": "39ff6a92b2d05012385f4b5def527f09d8512d05a1ff7c81581393f8e3cbaeab"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_199.npz",
+      "sha256": "c2505bc743abfe48fab2ae28c016c23a4b0439938ebf9dd0eceda41e226c566d"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_200.npz",
+      "sha256": "4fd1d401dc2f7d965cb1c4a828dec177bdfb15dfb68e5fe6ba88fd6e46683817"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_201.npz",
+      "sha256": "e387d2a87dc190c586f07e9a702375238156193a4a6ffc9e8f50db1069065585"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_202.npz",
+      "sha256": "53a1667eeba5c308853efcda219cb4f14339f15032987247aa1d1ad68051078d"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_283.npz",
+      "sha256": "19f6294304d3aad5743fdcdbeba4319891d2a68db6627722634fb9db1f5b07d8"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_284.npz",
+      "sha256": "51d0cb898edd20e29f1b95f2002c988500248a7461a41e5c81e2482ac6d74f66"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_285.npz",
+      "sha256": "5be9dcaf7982b67ba76488f699e2be042d568d44d2516cb8d848632ca2b621c1"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_286.npz",
+      "sha256": "8a1985a489e0436bd2728dc11f5524026707e80ff6075e061814eb7eae4b527a"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_287.npz",
+      "sha256": "d6e4f6a8f79c1b4772051c20016f24e1d889a0b3c27a237d8e42aa416e0f9e17"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_288.npz",
+      "sha256": "62997318de8189e1e11af6c4d0896477cd95341bddf9bd436d55cdef9df96c9b"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_289.npz",
+      "sha256": "9d505cc39ec6928d79aad6db9fc27bd658e6429e96b6418c7e2dc793e664695a"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_290.npz",
+      "sha256": "9495609a1ae262fec119cceca5c169000d9fcf477ce92e5c3dafb72512c58e4e"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_291.npz",
+      "sha256": "fa33f2a22a750f6235ef78dbb0622a83689ae7d402a16647a75170b1538f7a56"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_292.npz",
+      "sha256": "75ca955e8a499d031d81f8511b6143115490d7354c44059419b88750e3f7c743"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_293.npz",
+      "sha256": "531b343d0b8fccc6bcd81ff2b91cd69b16a2f05e3db6281ee1fce614fd2061f0"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_294.npz",
+      "sha256": "c6530756ab8c140c59b85b1bf9b9651b344510227a5c9d057d63716aca2f32f1"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_295.npz",
+      "sha256": "647e2680afa9bcdbe79362490e38003129626461cc24b817d82696e0bfadbc16"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_296.npz",
+      "sha256": "33dfd65a8258ca20a0dca227e14a18e5dbb50994e24d36a8d0622f5d036c0c4f"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_297.npz",
+      "sha256": "3bb97366088dd0b8d756665d5544ac3c9942063409fd8185d0f4e02d26562a74"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_298.npz",
+      "sha256": "04617df594fc7384004acdd127f8b99805e66aecb459e6d05174740d32b79728"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_299.npz",
+      "sha256": "90281914f130c289438952c8211dd8be83b865f225d91f640d6b57d305f8ff2e"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_300.npz",
+      "sha256": "6c60c3ca4bb71121f3d6231e1b4d6f65ba74650a8a5215c52e0af6ad843e6e3e"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_301.npz",
+      "sha256": "f7a9e9d14265545f07daf10f5bb59ab403fdea1bc17c5bcc0229042da217917f"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_302.npz",
+      "sha256": "80cd1f5682868c3587f1349b932d14aa6437456265e196110bb21820d3109b16"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_303.npz",
+      "sha256": "f3420494330080b2e83c7c0d456e171df9edcc2731dc1a6cbb98c9a41d871796"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_304.npz",
+      "sha256": "5b002a7d5d6732fde4d4855767aaaf7e97053c2149b9bb0f0972159e3b20570e"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_305.npz",
+      "sha256": "480091356d35fd3ff529d7accfc51117ff3a34df948994aa2bddd3600252b336"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_306.npz",
+      "sha256": "004b506d93c78db335123969e00a7233dc8bc899a58fa905f941bd48bfee0e43"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_307.npz",
+      "sha256": "dea588be0e8466acbf6cfb08dd26ddf5f95058fe29056176d3c5e9c444be3fd3"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_308.npz",
+      "sha256": "71c6b304c29466d0436b1cdad5c8c3d6a9ed96d93f9f511b64ebe5a0cfdc2f4d"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_309.npz",
+      "sha256": "9b6c0c9cb810084644237b4d6e56d43c93309b3de20ea4d52aba792615cd3955"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_310.npz",
+      "sha256": "dd7d1dc47ce37d8c1d4030435760c8345e5514b3237f3f3dd291511808666ec5"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_311.npz",
+      "sha256": "896edcc632f52e990987383dfa369decaaf9f463cfb32be47ba5203e74b7fa2c"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_312.npz",
+      "sha256": "2a4d2f9b57d1ad1c50eaaf2818b2582c228d96219ab3603d9a43bb7b4b94574d"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_313.npz",
+      "sha256": "cf5acb2b259d1922b236b712df35c11eea48e4eabe5dc4c30e1022e6fb45eef4"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_314.npz",
+      "sha256": "1d4442c5f5c8b7265bea60de3c00a4a335cc43b6edc29d6c715e65f92ad01c08"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_315.npz",
+      "sha256": "1a12e20261b44ab6c614663ad19c6f3d18df55aa26c139f3e972c9c80b1f1d61"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_316.npz",
+      "sha256": "c617388c9d5872429a6d5c20cdec1878d5296298e5dee0649d0235fd2ab97f76"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_317.npz",
+      "sha256": "2329e9b364eb7e61e1e6d93e8289642b3e6c95564b66bc5cc52315358e67390f"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_318.npz",
+      "sha256": "4fe2c88f9cd55ebfa1f37031c54eaccf31320cd391cbd5909fbfeb71f9346465"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_319.npz",
+      "sha256": "8624b8b6342ba139395913223251bac8bdd07d97116af909e66f369527aa45b4"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_320.npz",
+      "sha256": "2437286bbd505c4df604a260ab2a0d9d5cabb519857f019a17fda35a7717fd44"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_321.npz",
+      "sha256": "ace17f8546df2e28a763fccb96b6da1ea9aa01efa0ac327b349becf556c1e143"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_322.npz",
+      "sha256": "bae0ca70477b0e40992fcb3cd63f0fa0e84107969182d5161599d0dbbbe6cd2a"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_323.npz",
+      "sha256": "6f68d21475f55f8122b15f1e84e930728e0a9e897e7330adad63cb408b542148"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_324.npz",
+      "sha256": "09dfbf67c7c4e343b6a5e1374f806571fb4b7b3f7d97228e0311420d9e168f71"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_325.npz",
+      "sha256": "083945df428684dd491a4ac6abdfc914d04b23b46a5bca394de4eb331cc9530c"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_326.npz",
+      "sha256": "874991a57c94715d6931d5034ea451a63b50fe62fffa458131d6f994dd6d81a9"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_327.npz",
+      "sha256": "315a7f03ad34edc40c71230acb63a06cc622e2465b32cf12d419f61bf9576487"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_328.npz",
+      "sha256": "377850d00418bc6e2867e462d45472fcb2f20706ac12aeaf48efb5a0609af3c0"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_329.npz",
+      "sha256": "f6f67a68ffb2fd9e91bc4a2d024b0f868b1d3dd04e4623b3d14f25c9e4e71f16"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_330.npz",
+      "sha256": "0d2c16e6417f0c03d3f552082b83c833b3ce745a237118f18c8da5887be96680"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_331.npz",
+      "sha256": "49cf2684657ae6ae3828b7302cbe7f0e74eccfced183381147cc18df251a36fc"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_332.npz",
+      "sha256": "d7debd08102cf433e235f21a2df64abe82e2e719f077dd1c407325f71c006809"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_333.npz",
+      "sha256": "519ef4eecfe5489f0602f27ccbd040cca6164b852ebcc551cd78377ed60e62ad"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_334.npz",
+      "sha256": "661097b70d32448f3a7e5d311875c75ed753889544581902eb537ec7086cebea"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_335.npz",
+      "sha256": "d11d0f645c9ff537b9ff3312c03a761346076284ab84dffc93674e251f7ce01c"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_336.npz",
+      "sha256": "ddf5836d2a3ab4b6084b370df7a67f60792c5b948ba60fa00ded85ee087885ce"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_337.npz",
+      "sha256": "84c38c6e78ce7fb39fcbf4502af8eb8323454f9223ad1d32881b3ccb35e0f5e4"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_338.npz",
+      "sha256": "3a9b9b462fe9ea54de19e2fd78d57d6cc4c4a31b61b35115d0c281ab67cebdfd"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_339.npz",
+      "sha256": "1b0fcef70e85b440ad508f7ddb506436f9baa43ca9f5aa525566e39e95f8febb"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_340.npz",
+      "sha256": "146737be8d7f1320ff397dd1a7b735f5a5c1316a6936a469269c7b0ee4b63ba8"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_341.npz",
+      "sha256": "e0b3d9b9ef675e477cb8c57912d7e706732ec0375bc47da257cff69cd43e62c3"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_342.npz",
+      "sha256": "bb1218f84168f3561aceef0f919444b4972aa42fc080dd726edb1d0fda5b7b68"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_343.npz",
+      "sha256": "8f47083820ecb5344467b4a1540ed8ce74dd0277df918b95ed74a9ca375fc470"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_344.npz",
+      "sha256": "7c39a97641b7e800b8a82b3a897bac3f5ac8c389537bde163f64248072e8f0d3"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_345.npz",
+      "sha256": "e7263e38302f29488ee2f50f5656b9bf97ff98d64519146620ad72b3fcfb32cc"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_346.npz",
+      "sha256": "1af51da246e7f72c5a5c073ccd3d24667035b49148908876dac4cb376c1401fc"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_347.npz",
+      "sha256": "92bda1d53ced036a8803f20c988a5e4d7049aa1b992f42e58211e7ed70554237"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_348.npz",
+      "sha256": "b456368c1077af0f9b898e89b0d7b31e2a5baddbd1b9d2f9c814abb8950c5095"
+    },
+    {
+      "file": "C:\\Users\\jback\\Downloads\\a\\DATA\\open_radar\\eval\\track_349.npz",
+      "sha256": "cfa51f699fbbddce992e8b77b7437a5a90129509c1799b67568f0bc0b4bfa11e"
+    }
+  ],
+  "elapsed_seconds": 10.865325599967036
+}

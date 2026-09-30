@@ -1,0 +1,76 @@
+{
+  "protocol_sha256": "3a54d4910834aa62e25d67feae37b0a473dd9466f268563517c26c1f950ac42b",
+  "true_f0": 0.4943033212723463,
+  "true_drift": 0.013352895937832806,
+  "clock_report": {
+    "status": "accepted_model",
+    "reasons": [],
+    "time_origin": 0.0,
+    "frequency_initial": 0.4938823554589959,
+    "frequency_drift": 0.013387993348415915,
+    "explained_variation": 0.8405022939982048,
+    "local_explained_variation": [
+      0.846616439880644,
+      0.8329239670360287,
+      0.8651269497388177,
+      0.827821704206867,
+      0.8302465526970579,
+      0.8326054070268711
+    ],
+    "harmonics": 2,
+    "frequency_bounds": [
+      0.3,
+      0.85
+    ],
+    "drift_bounds": [
+      -0.015,
+      0.025
+    ],
+    "photometric_period_canonicalized": false,
+    "physical_rotation_identified": false,
+    "scope": "constant frequency drift; fixed harmonic amplitudes; phase relative to first sample",
+    "warning": "Photometric periodicity is not uniquely the physical rotation. Bounds are prior information."
+  },
+  "spectral_seconds": 0.3953891000128351,
+  "rows": [
+    {
+      "case": "symmetric",
+      "seed": 4,
+      "arm": "constant",
+      "nmse": 1.1415239130047128,
+      "frequency_mae": 0.4271571865970516,
+      "f0": 1.2551159951159951,
+      "drift": 0.0
+    },
+    {
+      "case": "symmetric",
+      "seed": 4,
+      "arm": "stft",
+      "nmse": 1.0101067818586198,
+      "frequency_mae": 0.6467286914810565,
+      "f0": 0.85,
+      "drift": 0.025
+    },
+    {
+      "case": "symmetric",
+      "seed": 4,
+      "arm": "astronomy",
+      "nmse": 0.18826514040170594,
+      "frequency_mae": 0.0004560307335950484,
+      "f0": 0.4938823554589959,
+      "drift": 0.013387993348415915,
+      "status": "accepted_model",
+      "reasons": [],
+      "seconds": 3.4852716000168584
+    },
+    {
+      "case": "symmetric",
+      "seed": 4,
+      "arm": "oracle",
+      "nmse": 0.1865888921231928,
+      "frequency_mae": 0.0,
+      "f0": 0.4943033212723463,
+      "drift": 0.013352895937832806
+    }
+  ]
+}

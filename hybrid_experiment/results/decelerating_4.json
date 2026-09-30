@@ -1,0 +1,76 @@
+{
+  "protocol_sha256": "3a54d4910834aa62e25d67feae37b0a473dd9466f268563517c26c1f950ac42b",
+  "true_f0": 0.7501230542633437,
+  "true_drift": -0.009,
+  "clock_report": {
+    "status": "accepted_model",
+    "reasons": [],
+    "time_origin": 0.0,
+    "frequency_initial": 0.750749264904585,
+    "frequency_drift": -0.009070329368886085,
+    "explained_variation": 0.8192212813825205,
+    "local_explained_variation": [
+      0.8389519134099114,
+      0.8053456526253713,
+      0.8088643897093772,
+      0.8069985137402492,
+      0.822220170130881,
+      0.8208634579750769
+    ],
+    "harmonics": 2,
+    "frequency_bounds": [
+      0.3,
+      0.85
+    ],
+    "drift_bounds": [
+      -0.015,
+      0.025
+    ],
+    "photometric_period_canonicalized": false,
+    "physical_rotation_identified": false,
+    "scope": "constant frequency drift; fixed harmonic amplitudes; phase relative to first sample",
+    "warning": "Photometric periodicity is not uniquely the physical rotation. Bounds are prior information."
+  },
+  "spectral_seconds": 0.39530929998727515,
+  "rows": [
+    {
+      "case": "decelerating",
+      "seed": 4,
+      "arm": "constant",
+      "nmse": 1.5735846222315983,
+      "frequency_mae": 0.13713318810539873,
+      "f0": 0.6623687423687424,
+      "drift": 0.0
+    },
+    {
+      "case": "decelerating",
+      "seed": 4,
+      "arm": "stft",
+      "nmse": 0.29070991274252295,
+      "frequency_mae": 0.006098681390895894,
+      "f0": 0.7453855994152047,
+      "drift": -0.008566337719298251
+    },
+    {
+      "case": "decelerating",
+      "seed": 4,
+      "arm": "astronomy",
+      "nmse": 0.20232381335497124,
+      "frequency_mae": 0.0011311444637997154,
+      "f0": 0.750749264904585,
+      "drift": -0.009070329368886085,
+      "status": "accepted_model",
+      "reasons": [],
+      "seconds": 2.892407800012734
+    },
+    {
+      "case": "decelerating",
+      "seed": 4,
+      "arm": "oracle",
+      "nmse": 0.2004746013859746,
+      "frequency_mae": 0.0,
+      "f0": 0.7501230542633437,
+      "drift": -0.009
+    }
+  ]
+}

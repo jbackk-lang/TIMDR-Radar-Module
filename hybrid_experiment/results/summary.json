@@ -1,0 +1,112 @@
+{
+  "steady": {
+    "constant": {
+      "nmse": 0.20110467980612418,
+      "frequency_mae": 0.0005229092117653323
+    },
+    "stft": {
+      "nmse": 0.3661119269087305,
+      "frequency_mae": 0.007349047183632674
+    },
+    "astronomy": {
+      "nmse": 0.22010948015795212,
+      "frequency_mae": 0.0023348051650893243
+    },
+    "oracle": {
+      "nmse": 0.1986768968543484,
+      "frequency_mae": 0.0
+    },
+    "accepted": 5
+  },
+  "accelerating": {
+    "constant": {
+      "nmse": 1.3006121780292152,
+      "frequency_mae": 0.22382439637639653
+    },
+    "stft": {
+      "nmse": 0.3692483598148194,
+      "frequency_mae": 0.0070186666382914525
+    },
+    "astronomy": {
+      "nmse": 0.20159879706115472,
+      "frequency_mae": 0.0009265023937128955
+    },
+    "oracle": {
+      "nmse": 0.19687691370201968,
+      "frequency_mae": 0.0
+    },
+    "accepted": 5
+  },
+  "decelerating": {
+    "constant": {
+      "nmse": 1.579408918158683,
+      "frequency_mae": 0.13477365802273633
+    },
+    "stft": {
+      "nmse": 0.2740100727858551,
+      "frequency_mae": 0.004241546600922695
+    },
+    "astronomy": {
+      "nmse": 0.20896609463820437,
+      "frequency_mae": 0.0008453506323772531
+    },
+    "oracle": {
+      "nmse": 0.20435418424748622,
+      "frequency_mae": 0.0
+    },
+    "accepted": 4
+  },
+  "gaps": {
+    "constant": {
+      "nmse": 1.1598403049932768,
+      "frequency_mae": 0.12083386086390462
+    },
+    "stft": {
+      "nmse": 0.9243581983818452,
+      "frequency_mae": 0.04579123305471785
+    },
+    "astronomy": {
+      "nmse": 0.1988346116042556,
+      "frequency_mae": 0.0012175343955739182
+    },
+    "oracle": {
+      "nmse": 0.1958719903256018,
+      "frequency_mae": 0.0
+    },
+    "accepted": 5
+  },
+  "symmetric": {
+    "constant": {
+      "nmse": 1.1456082264133902,
+      "frequency_mae": 0.36531113475913457
+    },
+    "stft": {
+      "nmse": 1.0067538807216772,
+      "frequency_mae": 0.632543201303701
+    },
+    "astronomy": {
+      "nmse": 0.1730488618444081,
+      "frequency_mae": 0.0004868094057743905
+    },
+    "oracle": {
+      "nmse": 0.17200751472895015,
+      "frequency_mae": 0.0
+    },
+    "accepted": 5
+  },
+  "noise": {
+    "constant": {
+      "nmse": 1.0253201307510937,
+      "frequency_mae": null
+    },
+    "stft": {
+      "nmse": 1.0195921942040311,
+      "frequency_mae": null
+    },
+    "astronomy": {
+      "nmse": 1.0313356359980954,
+      "frequency_mae": null
+    },
+    "accepted": 0
+  }
+}
