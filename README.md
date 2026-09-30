@@ -186,6 +186,14 @@ pred = radar.predict(traj)
 
 Uruchomienie: `python demo.py` / testy: `pytest -q`.
 
-## Hybryda radar–astronomia: nowy pilot
+## Eksperymenty sygnałowe TIMDR
+
+### Pole czas–częstotliwość na rzeczywistych danych
+
+[Moduł, testy i odtwarzanie](frequency_field_experiment/README.md) · [Pełny wynik](frequency_field_experiment/WYNIK.md).
+
+Na 140 śladach Open Radar Initiative (21 239 klatek) klasyczne śledzenie grzbietu widma zmniejszyło średnią rozbieżność z radarową referencją prędkości z 1,701 do 1,571 m/s (7,6%). Wynik dla dronów się pogorszył; dla pozostałych trzech klas poprawił. Parametry dobrano na osobnych 210 śladach dev. Samo śledzenie zajęło 3,55 s, ale jest wolniejsze od wyboru największego piku. To eksploracyjny moduł offline w modelu TIMDR, nie niezależna walidacja prędkości, nowy algorytm Dopplera ani potwierdzenie zegara astronomicznego. Dodatkowy test przesunięcia czasowego dronów ±0,20 s wybrał 0 s na dev; nie potwierdził hipotezy stałego opóźnienia w tym zakresie. Referencja nie pochodzi tu z GPS. Źródło danych i ograniczenia podano w raporcie.
+
+### Wcześniejszy pilot syntetyczny radar–astronomia
 
 Dodano [kod i protokół](hybrid_experiment/README.md) estymacji zegara rotacyjnego z obwiedni syntetycznego echa I/Q. W 30 próbach sprawdzono stały obrót, przyspieszanie, zwalnianie, luki, harmoniczne i sam szum. Przy przyspieszaniu NMSE prognozy: stała częstotliwość 1,301; STFT 0,369; zegar z astronomii 0,202; znany zegar 0,197. Przy stałym obrocie prosta metoda pozostaje lepsza. [Wyniki i ograniczenia](hybrid_experiment/INTERPRETACJA.md). To nie walidacja realnego radaru ani poprawy trajektorii; generator ma fazę zgodną z rodziną estymatora.

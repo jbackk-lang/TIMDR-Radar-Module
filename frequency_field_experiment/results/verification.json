@@ -1,0 +1,7 @@
+{
+  "verified": true,
+  "metrics_recomputed": 1120,
+  "input_hashes_checked": 350,
+  "dev_eval_ids_disjoint": true,
+  "frozen_code_and_protocol_match": true
+}

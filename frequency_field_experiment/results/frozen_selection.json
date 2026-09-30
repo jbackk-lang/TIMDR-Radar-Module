@@ -1,0 +1,27 @@
+{
+  "sign": 1,
+  "selection": {
+    "exponential": {
+      "parameter": 0.8,
+      "dev_mae_grid": {
+        "0.2": 2.462732807172884,
+        "0.5": 2.3882345640446045,
+        "0.8": 2.365780620942337
+      }
+    },
+    "ridge": {
+      "parameter": 10.0,
+      "dev_mae_grid": {
+        "2.0": 2.4482769499623513,
+        "10.0": 1.9443677631401448,
+        "50.0": 1.9902296498676628
+      }
+    }
+  },
+  "dev_tracks": 210,
+  "protocol_sha256": "c195e264647f5f73bd70b45bccfef0e5273c8ecb446b5590dfd06f494ef068cd",
+  "code_sha256": {
+    "frequency_field.py": "6eec1499e23a81c15b6ae90c64302200e8860e212e6c219d615f50a9141d63ad",
+    "benchmark.py": "570772d447e52af34759956d9d7d417ca2e759931388a040da3979f23fee5824"
+  }
+}

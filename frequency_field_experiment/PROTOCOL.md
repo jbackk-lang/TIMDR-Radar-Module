@@ -1,0 +1,15 @@
+# Frequency-field pilot v1 — 2026-09-30
+
+Local protocol written before this experiment. Exploratory: aggregate eval peak/median errors were already seen in a preceding pilot; not externally preregistered or a pristine holdout.
+
+Data: existing Open Radar Initiative cache, all dev/eval npz tracks, unchanged split. Authors: Gusland et al. (2021), DOI 10.1109/RadarConf2147009.2021.9455239, https://github.com/openradarinitiative/open_radar_datasets . Data license CC BY-NC 4.0. Reference velocity is from same radar, not independent truth. No class-specific tuning. Input complex Doppler spectra already windowed/processed by supplier, not raw ADC.
+
+Methods: per-frame strongest Doppler peak; causal exponential smoothing of that peak (alpha .2/.5/.8); offline dynamic-programming ridge through up to 16 local spectral maxima, log-power emission and capped squared velocity-change penalty. Ridge acceleration scales 2/10/50 m/s², transition cap 25. Doppler bin width adds an uncertainty floor. No spectral zero-bin removal. Gaps reset all methods: frame discontinuity or timestamp gap > 1.5 median interval. Timestamps in this dataset are milliseconds; API takes seconds. No range, velocity labels or classes enter prediction. Sign convention selected on dev, never eval. Each family chooses lowest dev track-macro MAE, fixed grid, no adaptive retuning.
+
+Primary metric: eval mean of per-track MAE (m/s), all predictions retained including low-confidence ones. Also RMSE per track, per class descriptive summaries, paired track-bootstrap 95% CI for MAE improvement versus peak (2000 draws seed 20260930). Mann–Whitney U/rank-biserial effect included as descriptive unpaired diagnostic, not primary paired inference; three pairwise p values Bonferroni adjusted. Existing track split does not guarantee session independence; no confirmatory significance claims.
+
+Timing: common spectrum preparation separately; each complete predictor timed 3 times per eval track, after warmup. Excludes disk I/O, includes candidate extraction for ridge. Report median repeat per track and total throughput; relative timing only these implementations on same CPU, no neural-net or astronomy-clock speed claim.
+
+Controls before real evaluation: exact single ridge, changing velocity with intermittent stronger separated interference, absence of spectral signal, reset across gaps, invalid inputs, and brute-force optimum of a tiny dynamic-programming problem. No parameters tuned on controls or eval. Confidence: selected bin vs per-frame median power >= 13 dB, diagnostics only, not calibrated accuracy. Shuffled frame-order ridge on eval (fixed RNG seed), restoring order before scoring, is a negative temporal control; does not select parameters.
+
+This implements classical frequency-ridge tracking as an experimental TIMDR component. No new physical law, no proof of algorithmic novelty. Does not import the astronomy harmonic clock, estimate spin, or convert flashes directly to translational speed. Further integration with that clock is conditional on evidence and adequate data.
